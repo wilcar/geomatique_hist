@@ -1,0 +1,20 @@
+---
+image: images/acceuil.png
+about:
+  template: trestles
+  image-width: 30em
+---
+
+## Bienvenue  ! 
+
+L’utilisation de la cartographie en histoire est partagée entre trois domaines principaux : la cartographie comme source, comme outil d’analyse et comme moyen de représentation.  
+Les TD vous permettrons d'acquérir les compétences et les connaissances en cartographie et systèmes d'informations géographiques nécessaires à la conception d'un large éventail de cartes  ainsi qu'à l'analyse de données géospatiales.
+Les TD s’appuieront sur des études de cas variées (cartographie de données de recherche d'étudiants de master Histoire, exploitation de cartes anciennes, cartographie du terrorisme et des conflits, etc...).
+Nous travaillerons avec le logiciel QGIS libre et gratuit. 
+
+
+
+
+
+
+

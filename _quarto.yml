@@ -1,0 +1,93 @@
+project:
+  type: website
+
+
+website:
+  back-to-top-navigation: true
+  title: "Cartographie de données historiques"
+  navbar:
+    background: primary
+    right:
+      - text: "Méthodes"
+        file: m-integration-vectoriel.qmd  
+      - text : "Exercices"
+        file : exos-methodo.qmd
+
+  sidebar: 
+    - title: "Méthodes"
+      contents:
+      - section: "Intégration"
+        contents:
+          - m-integration-vectoriel.qmd
+          - m-integration-geoservices.qmd
+          - m-integration-csv.qmd
+          - m-integration-exos.qmd
+          - m-integration-competences.qmd
+      - section: "Projections"
+        contents:
+          - m-projections.qmd
+          - m-projections-ex.qmd
+          - m-projections-qgis.qmd
+      - section: "Interrogation"
+        contents:
+          - m-interro-id.qmd
+          - m-interro-selec.qmd
+          - m-interro-filtre.qmd 
+          - m-interro-exos.qmd
+      - section: "Géotraitement/analyse spatiale"
+        contents:
+          - m-agreg.qmd
+          - m-voronoi.qmd
+      - section: "Numérisation"
+        contents:
+          - m-nouvelle-couche.qmd
+          - m-numerisation-points.qmd
+          - m-numerisation-competences.qmd
+      - section: "Symbologie"         
+        contents:
+          - m-symbologie-prop.qmd          
+      - section: "Exercices"
+        contents:
+          - exercices.qmd
+          - exos-methodo.qmd 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+  page-footer:
+    left: "Wilfrid Cariou,  Nantes Université. 2022- "
+
+lang: fr 
+
+
+format:
+  html:
+    link-external-icon: true
+    link-external-newwindow: true
+    link-external-filter: '^(?:http:|https:)\/\/www\.quarto\.org\/custom'
+    theme:
+      - lux
+      - custom.scss
+    css: style.css 
+    toc: true
+    toc-depth: 4
+    toc-location: right
+    grid:
+      body-width: 750px
+
+      
+filters:
+  - lightbox
+lightbox: 
+  desc-position: left
+
+

@@ -1,0 +1,127 @@
+
+# Les projections cartographiques
+
+
+```{=html}
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+```
+
+## <iconify-icon icon="ph:seal-question" style="font-size: 25px;"></iconify-icon> Repères
+
+
+
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+
+## De la terre à la carte
+Une carte est le résultat de la projection sur une surface plane de mesures relatives à la Terre. La transformation de la surface courbe de la planète sur un plan est connue sous le nom de projection cartographique et peut prendre une multitude de formes différentes.\
+
+![Les trois grandes familles de projection, comme si l'on installait une lampe au centre de la Terre et qu'elle était une sorte d'abat-jour : cylindrique (a), conique (b) et azimutale (c). (QGIS)](images/projec/proj_decoupe.png){fig-align="center" width="400"}
+
+L'idée occupait déjà les mathématiciens-cartographes de l'antiquité comme le grec Ptolémée qui proposait un système de projection conique ainsi qu'une grille de méridiens et de parallèles, dont l'équateur et les tropiques, qui est toujours universellement utilisée.
+
+![Carte de Ptolemée. « Géographie (Ptolémée) », in: Wikipédia.](images/projec/PtolemyWorldMap.jpg){fig-align="center" width="400"}
+:::
+
+
+
+
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+### Les déformations
+
+La projection des données géographiques d'un modèle ellipsoïdal de la Terre vers un système de coordonnées planes a toujours comme conséquence des déformations.
+
+Certaines projections cartographiques ont été conçues pour préserver les aires (surfaces relatives des différents territoires) et d'autres les angles localement de telle sorte que les formes des territoires semblent exactes. Les projections de compromis offrent une représentation de la Terre qui n’est pas parfaitement exacte d’une certaine manière, mais qui n’est pas non plus très déformée. Elles sont généralement utilisées pour les cartes du monde entier.
+
+- Les cartes où les surfaces sont conservées font appel à des projections équivalentes.
+- les cartes qui visent à préserver les formes/angles utilisent des projections conformes.
+
+
+![Gravure de 1921 de Charles H. Deetz expliquant les différences de projections en déformant un visage.](images/projec/deetz.jpg){fig-align="center" width="400"}
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+## L’indicatrice de Tissot
+
+L’indicatrice de Tissot est une forme géométrique (un cercle ou une ellipse) permet d'apprécier le degré de déformation d'un système de projection cartographique. Les modes de projection dits conformes préservent la forme circulaire des indicatrices, mais pas leur taille (ces projections conservent donc les formes des objets représentés, mais pas leur surface). Les modes de projection dits équivalents préservent la surface des indicatrices, mais pas leur forme, ce sont des ellipses (les formes sont altérées, mais pas les surfaces). 
+
+![La taille et la forme des cercles ne varient pas sur une sphère.](https://upload.wikimedia.org/wikipedia/commons/0/0e/Tissot_world_from_space.png
+){fig-align="center" width="400"}
+
+![Projection conforme de Mercator .](https://upload.wikimedia.org/wikipedia/commons/2/24/Tissot_indicatrix_world_map_Mercator_proj.svg
+){fig-align="center" width="400"}
+:::
+
+
+
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+### Le choix d'une projection
+
+Le choix d'une projection n'est pas neutre. Chaque projection présente des avantages et des inconvénients répondants à différents besoins. En choisissant de manière appropriée la projection, l'utilisateur peut préserver les caractéristiques qui lui importent mais, inéluctablement au détriment des autres.
+
+-   Cartes locales : Mercator.
+
+-   Cartes globales : plusieurs choix possibles.
+
+-   Cartes régionales et continentales : projections officielles ou plusieurs choix possibles en fonction de la latitude et de l'emprise de l'espace à cartographier. Le site web projectionwizard.org se relève indispensable pour sélectionner l'espace à cartographier, une catégorie de projection et l'expression qui la décrit pour une utilisation dans QGIS.
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+## Vocabulaire
+
+**Projection** : Transformation de la surface courbe de la terre sur un plan.
+
+**Planisphère** : représentation plane de la surface du globe terrestre.
+
+**Graticule** : lignes montrant les parallèles de latitude et les méridiens de longitude de la Terre.
+
+**Indicatrice de tissot** : forme géométrique (cercle ou ellipse) permettant d'apprécier le degré de déformation d'un système de projection cartographique.
+
+**Projection conforme** : projections privilégiant les angles et donc les formes.
+
+**Projection équivalente** : projections privilégiant les aires et les distances.
+
+**Projection de compromis** ni équivalente ni conforme mais essaie de trouver un compromis pour les distorsions inhérentes à toute projection.\
+
+**Géoïde** Le géoïde forme une représentation précise de la surface terrestre faisant abstraction des reliefs. Loin d'être une sphère, il est bosselé.
+
+**Ellipsoïde** L'ellipsoïde est la figure géométrique qui se rapproche le plus du géoïde. C'est une forme géométrique tridimensionnelle qui ressemble à une ellipse étirée dans les trois dimensions de l'espace. Il permet de localiser un lieu par des ses cooordonnées en logitude et latitude.
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+## Références
+
+[Le Dessous des Cartes - ARTE, Cartographie : comment représenter le monde , 2021](https://www.youtube.com/watch?v=WJUMOyreOAM)
+
+
+[Vox, Why all world maps are wrong, 2016](https://www.youtube.com/watch?v=kIID5FDi2JQ)
+
+[« Cartographie numérique: Projections cartographiques »](https://cartonumerique.blogspot.com/p/projections-cartographiques.html)
+
+[Rivière Philippe, « Projection Bertin (1953) »](https://visionscarto.net/projection-bertin-1953)\
+
+[Projections](http://www.lecfc.fr/new/articles/221-article-11.pdf)\
+
+[worldmapgenerator](https://www.worldmapgenerator.com/)\
+
+[« Pourquoi les cartes géographiques sont forcément (un peu) mensongères », Le Monde.fr, 20.10.2015.](https://www.lemonde.fr/les-decodeurs/article/2015/10/20/pourquoi-les-cartes-geographiques-sont-mensongeres_4793301_4355770.html)\
+
+[« Vidal de la Blache, un historien au service de la géographie », Billet, *L'Histoire à la BnF*](https://histoirebnf.hypotheses.org/2044)
+
+[Barney Timothy, « The Peters Projection and the Latitude and Longitude of Recolonization », Journal of International and Intercultural Communication, 03.04.2014](https://scholarship.richmond.edu/cgi/viewcontent.cgi?article=1046&context=rhetoric-faculty-publications)
+
+[Miljenko Lapaine, E. Lynn Usery « Projections cartographiques et systèmes de références »](https://icaci.org/files/documents/wom/09_IMY_WoM_fr.pdf)
+
+[« BnF - L'Âge d'or des cartes marines »](http://expositions.bnf.fr/marine/grand/por_115.htm)
+
+[« Le monde en étoile: genèse d'une projection cartographique »](http://mappemonde-archive.mgm.fr/num39/lieux/lieux13301.html)
+
+[Quick Notes on Map Projections in ArcGIS](https://ago-item-storage.s3.us-east-1.amazonaws.com/e8b85d508d2c4f21a3dec4e52dc7d9c4/Quick_Notes_on_Map_Projections_in_ArcGIS_nov2019.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQD7ZmCvhIItYt00Ibh18OJdjctRel37CEBX3Vx5tVjTyQIgBDxloifV%2BNdI2jiBeg4RMeNIYxNvKTCWR%2BqvJNrhQv8q0gQIFRAAGgw2MDQ3NTgxMDI2NjUiDH36%2F%2FaPoDByWRD%2F%2ByqvBJIWqPrzekvtrxe68h%2FU05RNuT0uEx%2Bgvr7HOiFMyydGRf0rDUIzeughVw6cesC72hk2FPcM4D6bAqkehM6Hz7GJ52vJV%2F2dqc1pMxyCLsqIKWcxQEY%2BYfyT7JstDWqMO%2BK6bpHFklIo0AL6vLnYLJlOBtD57aJLEC%2FaGVJ6iG%2FBOAj6KcKUfruF1LTo9PWY2BOFPb%2FGbVluaE6nHz3d7LgfM4kqZsrC3jaBONWS6hH5vrVlwF9MZ7Q%2BLbUxWfg1HlPVLvzdZJg%2FpJVMt2mRuYx9o7nCcgT4ds%2BwbNY%2Fq85RbqaWn6RGeqD%2BGZsIJzzHsgg6ectIWmWWwU7hEkNBUsmlTB25OCMbrqhIFK4OVtf7ujVCzCTVM6H9qcQQ986XT67xdFUy77v4KBueg3%2FSgSm%2BuaalG4tbD38oHchdmwtKRr4ZwVAk6hoRBN3aqHP0mR4hcLodEdMQCJk8d8oXIGJNS6SzAWCjRyC1eLY5366Z7TYDLClKiHODrw2vKIK3HNr%2B3ErknvByOcO7e4RRW3IodUgThZjOJYOUp3rfNdGX%2FsrF9%2Bl3Xhg4V5qBqLfDVuxWeV%2FATMBWjvd%2BRpm1V8sJfjP5PkKZOQVLbbnSi74ZbGquFBkjcnbC3vlxCN49w2Won8K5yWcCesnk7s65V8etMhNWrysZKO1NyuMiDxiygxcq4rMViyePFV%2FwYj56PXlsKhpLjIcYZJxrpomP8w4b8w0EnGueQj7yni8tX%2F8wtaK8lQY6qQFBQW%2B4KtDh%2FVDQo3yYwWFMZaseIp4fib%2BnxOASz76iSNabIuYcTt%2BGSMoaO2r4W%2F6kpEontwVw5knhR4fF29X0EUocFEFvCCZ7EpqSIykAk0uj1Pkx73IQo11u2N7bShgDp6ZKvLOa7%2FUwvOzVL%2B1qdVu98gQGPDvFKIgxPq2yJCqREEBSGJRdVWIV4BMJUhtN%2FBPrRzbC%2B3W0BCT5ZkHnt15JYkBFgKC7&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220619T140215Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAYZTTEKKEZUTR67P2%2F20220619%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=abdfee70c24084989adfe3d53a39e68bb79966e8acb08e7cf74cb2e65a378734)
+
+https://www.sciencespo.fr/cartographie/graticule/app/
+:::
+
+
+

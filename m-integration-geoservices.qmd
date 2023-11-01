@@ -1,0 +1,91 @@
+# Connexion à un géoservice
+
+```{=html}
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+```
+
+
+
+Il est possible de visualiser directement dans QGIS des données géographiques depuis un serveur.
+
+
+
+## <iconify-icon icon="ph:seal-question" style="font-size: 25px;"></iconify-icon> Repères
+
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+##### Quickmaps services 
+
+Le plugin QuickMapServices (Menu **Internet\> Quickmap services**) met à disposition un ensemble de cartes et photographies aériennes que vous pouvez compléter.
+
+Pour cela, dans le menu **Internet\> QuickMapServices**, sélectionnez **paramètres** et allez à l'onglet **plus services**. Cliquez sur le bouton **Get Contributed pack**. Si vous rouvrez ensuite le menu **QuickMapService** vous constaterez que d'autres cartes sont disponibles.
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+#####  Connexion à un serveur WMS/WMTS
+
+Pour visualiser une carte hébergée sur un serveur WMS/WMTS, vous devez connaître son URL. Dans le panneau **Explorateur**, procédez par **clic-droit\> Nouvelle connexion**. Nommez la couche et saisissez l'URL de la carte.
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+#####  Connexion à un serveur de tuiles raster XYZ
+
+Tuiles OSM :Par défaut les tuiles OpenStreetMap (OSM) sont disponibles afin de disposer d'un fond de carte aisément. Les tuiles OSM sont accessibles par le panneau **Explorateur \> XYz Tiles \> OpenStreetMap**.
+
+Autres tuiles : Pour visualiser d'autres cartes, vous devez connaître leur URL. Dans le panneau **Explorateur**, procédez par **clic-droit\> Nouvelle connexion**. Nommez la couche et saisissez l'URL de la carte.
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+#####  Connexion au serveur de tuiles vectorielles MapTiler
+
+Les tuiles vectorielles basées sur OpenStreetMap présentent de nombreux avantages :
+
+-   Affichage rapide.\
+-   Absence de pixellisation.\
+-   personnalisation (symbologie / étiquettes, désactivation entités).
+
+Pour se connecter au serveur MapTiler, vous devez d'abord vous rendre dans le menu **Extensions**, saisir "MapTiler" dans la **barre de recherche** et **Installer le plugin**. Celui-ci sera disponible dans le panneau **Explorateur**.
+:::
+
+
+
+
+<!-- CONSEILS -->
+<!-- et -->
+<!-- ASTUCES  -->
+
+
+
+## <iconify-icon icon="streamline:interface-lighting-light-bulb-on-lighting-light-shine-incandescent-bulb-lights" style="font-size: 25px;"></iconify-icon> Conseils et astuces
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+## Fond de carte
+Il est recommandé d'afficher au préalable le fond de carte OSM avant toute autre connexion. Deux intérêts : permettre adopter la projection WGS84 (EPSG:3857) adaptée à la visualisation de la plupart des données et disposer d'un fond de carte pour se repérer.
+:::
+
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+## Vitesse d'affichage 
+Certaines données s'affichent très lentement en raison de leur poids.
+:::
+
+
+
+
+
+
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+## Zoom sur la couche
+Le bouton **Zoom sur la couche** peut faciliter le repérage d'une couche nouvellement importée (bouton ![](images/icones/qgis%20QGIS%20master%20images-themes_default/ico-utiles/mActionZoomToLayer.png){width="25px"}).
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+## Couche non visible
+La couche importée peut se retrouver masquée par les couches existantes. Dans ce cas, modifiez l'ordre d'affichage des couches.
+:::
+
+
+
+
+

@@ -1,0 +1,8 @@
+---
+listing:
+  contents:
+    - "m-integration-exos.qmd"
+    - "m-interro-exos.qmd"
+---
+
+## Exercices méthodologiques

@@ -1,0 +1,83 @@
+# Importation de fichiers vectoriels
+
+```{=html}
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+```
+QGIS prend en charge les principaux formats de fichiers de données géospatiales vectoriels. Les formats Geopackage (.gpkg) et GeoJSON (.geojson)reposent sur un unique fichier contrairement au format Shapefile.
+
+## <iconify-icon icon="ph:seal-question" style="font-size: 25px;"></iconify-icon> Repères
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+###### Formats de fichiers vectoriels
+
+-   Shapefile (.shp)
+-   Geopackage (.gpkg) 
+-   GeoJSON (.geojson)
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+###### Méthodes d'importation
+
+Il existe trois manières d'importer les fichiers dans QGIS, la plus simple étant le **glissé-déposé**. Vous pouvez également utiliser le **gestionnaire des sources de données** de la barre d'outils ou le menu **Couches\> Ajouter une couche**.
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+## Format GeoJSON et entités multiples
+
+Un fichier GeoJSON peut contenir des sous ensembles d'entités caractérisées par des géométries différentes (points, lignes ou polygones). Si c'est le cas, une boîte de dialogue s'ouvrira pour que vous puissiez sélectionner les entités souhaitées.
+
+::: {.callout-warning collapse="true" appearance="default" icon="true"}
+## Boîte de dialogue
+
+Il peut arriver que la boîte de dialogue s'ouvre en arrière plan, se trouvant alors masquée par la fenêtre de QGIS.
+:::
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+## Spécificités du format Shapefile
+
+Un Shapefile est composé de différents fichiers dont le principal est le .shp. Ces fichiers, lorsqu'ils sont proposés au téléchargement, sont en général réunis dans une archive de type zip et plus rarement rar ou 7z.
+
+Plusieurs procédures d'importation existent en fonction :
+
+-   de l'usage que vous souhaitez faire des données (lecture ou édition).\
+-   de votre système d'exploitation (MacOS extrait automatiquement les fichiers d'un zip contrairement à W10).\
+-   ou du format d'archive (zip, compatible avec les systèmes d'exploitation ou RAR et 7ZIP dont le contenu doit être extrait avec l'utilitaire 7zip).
+
+
+Un fichier zip peut contenir plusieurs shapefiles. Si c'est le cas, une boîte de dialogue s'ouvrira pour que vous puissiez sélectionner les shapefiles souhaites.
+
+::: {.callout-warning collapse="true" appearance="default" icon="true"}
+## Zip et shapefiles multiples
+
+Il peut arriver que la boîte de dialogue s'ouvre en arrière plan, se trouvant alors masquée par la fenêtre de QGIS.
+:::
+
+::: hscroll
+| Format   | OS         | JDD                                 | Usage   | Procédure                                    |
+|--------------|--------------|-------------------|--------------|--------------|
+| Zip      | W10        | unique <br> (ex. fichier de points) | lecture | G-D le zip.                                  |
+| Zip      | W10        | \-                                  | édition | Extraire avec W10. G-D le shp.               |
+| Zip      | MacOS      | \-                                  | \-      | G-D le(s) shp.                               |
+| RAR-7zip | W10/ MAcOS | \-                                  | \-      | Extraire avec l'utilitaire 7zip. G-D le shp. |
+
+G-D: glissé-déposé.
+
+
+
+:::
+:::
+
+## <iconify-icon icon="streamline:interface-lighting-light-bulb-on-lighting-light-shine-incandescent-bulb-lights" style="font-size: 25px;"></iconify-icon> Conseils et astuces
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+## Formats privilégier
+
+Privilégiez les formats GeoJSON ou Geopackage aux Shapefiles.Ces derniers ne reposant que sur un fichier unique et ne nécessitent pas d'être dézipés pour être édités.
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+## Mauvaise restitution des données textuelles
+
+Si les valeurs textuelles de la table attributaire ne pas sont pas correctement restituées, vous devez alors réimporter le fichier par le **Gestionnaire de source de données** ou le **Menu Couche** et modifier l'encodage des caractères (en général `system` ou `utf-8`)
+:::

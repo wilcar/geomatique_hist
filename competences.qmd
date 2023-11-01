@@ -1,0 +1,9 @@
+---
+listing:
+  contents:
+    - "m-integration-competences.qmd"
+    - "m-numerisation-competences.qmd"
+---
+
+
+ 

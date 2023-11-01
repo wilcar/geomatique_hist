@@ -1,0 +1,71 @@
+# Numérisation d'entités ponctuelles
+
+https://tutoqgis.cnrs.fr/exports_pdf/tutoqgis_05_numerisation.pdf
+
+```{=html}
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+```
+## <iconify-icon icon="ph:seal-question" style="font-size: 25px;"></iconify-icon> Repères
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+## Basculer en mode édition
+
+Par défaut, toutes les couches ajoutées dans QGIS sont « verrouillées ». Pour rendre une couche éditable, que ce soit pour modifier les données de la table attributaire ou la géométrie d'un élément, il faut donc passer en **mode édition**.
+
+Pour basculer en mode édition sélectionnez la couche dans la table des matières puis cliquez sur l'icône **Basculer en mode édition** ![](images/icones/qgis%20QGIS%20master%20images-themes_default/ico-utiles/mActionToggleEditing.png){width="25"}. Certains outils de la barre d'outil d'édition deviennent actifs, et dans le panneau des couches un crayon apparaît à gauche du nom de la couche.
+
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+## Ajouter des entité ponctuelles
+
+1.  Cliquez sur le bouton **Ajouter une enttié ponctuelle** ![](images/icones/qgis%20QGIS%20master%20images-themes_default/ico-utiles/mActionCapturePoint_1.png){width="25"} et cliquez sur l'implantation souhaitée.
+
+2.  Une fenêtre de saisie d'attributs s'ouvre. Laissez **Génération automatique** pour le champ fid, et renseignez les attributs disponibles.
+
+3.  N'oubliez pas de sauvegarder vos modifications en cliquant sur l'icône **Sauvegarder les modifications** ![](images/icones/qgis%20QGIS%20master%20images-themes_default/ico-utiles/mActionSaveEdits_1.png){width="25"} ou en quittant le mode d' d'édition.
+
+::: {.callout-note collapse="false" appearance="default" icon="true"}
+## Le champ Fid
+
+A quoi correspond ce champ Fid ? Le GeoPackage étant une base de données, une colonne d'identifiant unique est créé automatiquement lors de la création de la couche, afin d'identifier de manière unique chaque entité. Cette colonne sera remplie automatiquement,
+:::
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+
+## Modification d'entité ponctuelles
+
+Il peut arriver de vouloir modifier un point déjà existant, soit que vous vouliez le déplacer, soit que vous souhaitiez modifier ses données attributaires
+
+La couche doit être en mode édition
+
+
+###### Déplacemement
+
+Vous pouvez utiliser l'outil d'édition de sommets (bouton  ![](images/icones/qgis%20QGIS%20master%20images-themes_default/ico-utiles/mActionVertexToolActiveLayer_1.png){width="25"}
+
+###### Modification des données attributaires
+
+Ouvrez la table attributaire (bouton images/icones/qgis%20QGIS%20master%20images-themes_default/ico-utiles/attributes.png){width="25"}) et apportez les modifications. 
+
+:::
+
+:::{.callout-warning collapse=true appearance='default' icon=true}
+## Quitter le  mode édition
+Quittez le mode édition par l'icône **Basculer en mode édition** ![](images/icones/qgis%20QGIS%20master%20images-themes_default/ico-utiles/mActionToggleEditing.png){width="25"}. 
+:::
+
+
+
+## <iconify-icon icon="fluent:video-clip-20-regular" style="font-size: 25px;"></iconify-icon> Tutoriel vidéo
+
+Temps de visionnage : 6 mn.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ii5jlXZWYXY?si=jW1trkxw-9IfCCAS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen><iframe>
+
+
+
+
+
+

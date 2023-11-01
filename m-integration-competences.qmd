@@ -1,0 +1,52 @@
+---
+editor: 
+  markdown: 
+    wrap: sentence
+---
+
+# Intégration de données, testez vos compétences
+
+## Importation de fichiers vectoriels avec QGIS (CC1)
+
+1.  Quels sont les trois formats de fichiers courants de données vectorielles ?
+
+2.  Peut-on procéder par glissé-déposé pour importer un fichier vectoriel dans QGIS ?
+
+3.  Un shapefile est-il composé de un ou de plusieurs fichiers ?
+
+4.  Vous disposez d'un shapefile stocké dans une archive zip.
+    Est-il toujours nécessaire d'en extraire le contenu ?
+
+5.  Vous disposez d'un shapefile non zipé.
+    Comment l'importer dans QGIS ?
+
+6.  Pour quelle raison faut-il privilégier les formats GeoJSON ou Geopackage aux Shapefiles ?
+
+## Importation de fichiers csv avec QGIS (CC1)
+
+1.  Avec quel logiciel autre que le tableur peut-on ouvrir un fichier CSV pour en contrôler le contenu ?
+
+2.  Peut-on précéder par glissé-déposé pour importer un CSV dans QGIS ?
+
+3.  Lors du paramétrage de l'importation, les colonnes du CSV ne sont pas correctement restituées dans la fenêtre de l'échantillon de données.
+    Que faut-il faire ?
+
+4.  Vos données comportent des nombre décimaux employant la virgule comme séparateur.
+    QGIS le détecte-il par défaut ?
+
+5.  Vos données comportent des en-têtes en première ligne.
+    QGIS les détecte-ils par défaut ?
+
+6.  Lorsque vos données CSV possèdent des coordonnées en longitude et latitude provenant de Google Maps.
+    Quel SCR renseigner lors du paramétrage de l'importation ?
+
+7.  Des données, que vous estimez être numériques, sont interprétées comme du texte par QGIS lors du paramétrage de l'importation, que faut-il vérifier dans votre CSV ?
+
+8.  Après avoir importé vos données, vos objets se retrouvent à un emplacement non souhaité.
+    Qu'à t-il pu se passer ?
+
+## Importation de fichiers raster avec QGIS (CC1)
+
+1.  Quel est le format de fichiers courant de données raster ?
+
+2.  Peut-on précéder par glissé-déposé pour importer un fichier raster dans QGIS ?

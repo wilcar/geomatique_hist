@@ -1,0 +1,60 @@
+# Les projections dans QGIS
+
+
+
+```{=html}
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+```
+
+## <iconify-icon icon="ph:seal-question" style="font-size: 25px;"></iconify-icon> Repères
+
+
+
+
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+####  Les systèmes de coordonnées de référence (SCR)
+
+QGIS utilise des systèmes de coordonnées de référence (SCR) associant projection et référenciel de coordonnées géographiques. 
+
+Ces SCR standards sont identifiées via une combinaison *autorité:code* où l’autorité est le nom d’une organisation telle que « EPSG » ou « IGNF » et le code est un nombre unique associé à un SCR spécifique. Par exemple, le SCR WGS84 correspond à l’identifiant EPSG:4326 et le SCR standard en webmapping, EPSG:3857.
+
+- Par défaut, QGIS ouvre chaque nouveau projet en utilisant une projection par défaut globale. Ce SCR par défaut est EPSG:4326 (également appelé « WGS 84 »).
+
+- Le SCR du projet est redéfini avec celui de la première couche chargée. Par exemple, si vous chargez OpenStreetMap, le SCR du projet sera redéfini en EPSG:3857.
+
+- Vous pouvez choisir un nouveau SCR pour votre projet QGIS par double-clic sur le bouton dédié situé dans la partie inférieure droite de l'interface.
+
+:::{.callout-warning collapse=false appearance='default' icon=true}
+## Conseils
+Le déplacement sur une carte en temps réel n'est pas toujours possible avec certains SCR. Dans ce cas, il est préférable de travailler avec un SCR éprouvé comme le WGS84 et de modifier la projection ponctuellement ou à l'achèvement du projet.
+:::
+
+:::
+
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+##  Quelques projections disponibles dans QGIS
+
+| Nom                          | Echelle / emprise  | Code        |
+|------------------------------|--------------------|-------------|
+| Mercator                     | locale             | EPSG:3857   |
+| Gall stéréographique         | Globale            | ESRI:5016   |
+| Equal earth                  | Globale            | ESRI:53035  |
+| Robinson                     | Globale            | ESRI:54030  |
+| Good Homolosine              | Globale            | ESRI: 54052 |
+| Mollweide                    | Globale            | ESRI:54009  |
+| Natural Earth                | Globale            | ESRI: 54078 |
+| Eckert IV                    | Globale            | ESRI:5412   |
+| Lambert93                    | Régionale\> France | EPSG:2154   |
+| Lambert Azimuthal Equal Area | Régionale \>Russie | EPSG:2576   |
+| Lambert ETRS89               | Régionale\>Europe  | EPSG:3035   |
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+##  Les projections personnalisées
+
+ex : Gall-Peters
+
+"+proj=cea +lon_0=0 +x_0=0 +y_0=0 +lat_ts=45 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"
+:::

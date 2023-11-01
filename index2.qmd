@@ -1,0 +1,10 @@
+---
+listing:
+  categories: true
+  contents:
+    - "fiche1.qmd"
+    - "fiche2.qmd"
+    - "fiche3.qmd"
+    - "fiche4.qmd"
+---
+

@@ -1,0 +1,245 @@
+::: cartouche
+# Données
+:::
+
+::: titrepage
+Jeux de données
+:::
+
+::: {.callout-section .callout-note collapse="true"}
+## Ministère de la culture
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+### Portail institutionnel : l'Atlas des patrimoines
+
+##### Qu'est-ce que l'Atlas des patrimoines ?
+
+L'Atlas des patrimoines développé par le ministère de la culture et de la communication propose un accès cartographique (par la géolocalisation) à des informations culturelles et patrimoniales. Il permet de rechercher, visualiser, éditer et télécharger des données géographiques sur un territoire.
+
+![](images/sites-web/atlasP.PNG){fig-align="center"}
+
+##### Comment télécharger des données geospatiales disponibles dans l'Atlas ?
+
+Après avoir cliqué sur la disquette, vous devez séle"ctionner comme format d'export ESRI **fiche + Shapefile** et comme projection **Lambert 93 (code epsg 2154)**.
+:::
+
+![](images/sites-web/atlasP-2.PNG){fig-align="center"}
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+### La carte archéologique nationale
+
+##### Qu'est-ce que la carte archéologique nationale ?
+
+La carte archéologique nationale est un inventaire cartographié des informations relatives à l'archéologie sur le territoire français, des origines à nos jours. Elle recense et localise les opérations archéologiques réalisées, les sites connus et les protections réglementaires dont ils font l'objet (zones de présomption de prescription archéologique, inscriptions et classements au titre des monuments Historiques). Elle est à la fois un instrument de recherche pour les archéologues, un outil de décision et de gestion du patrimoine pour les DRAC et un moyen d'information du public. La version informatisée de la carte archéologique est une application nationale baptisée Patriarche pour Patrimoine archéologique.
+
+La base de données s'organise en cinq modules qui, pour les trois premiers, sont liés à un géoréférencement :
+
+-   le module « Entités archéologiques »
+
+-   le module « Opérations »
+
+-   le module « Protection »
+
+-   le module « Sources documentaires »
+
+-   le module « Répertoire »
+
+##### Le module « entités archéologiques »
+
+Une entité archéologique peut-être :
+
+-   soit une entité archéologique, caractérisée par un ensemble cohérent de vestiges, restes mobiliers ou immobiliers témoignant d'activités passées, présentant une unité chronologique et/ ou fonctionnelle sur un espace donné, découvert lors d'une ou de plusieurs opérations archéologiques,
+
+-   soit un lieu contenant des vestiges indéterminés (mobilier mal caractérisé ou peu caractéristique...),
+
+-   soit un lieu contenant peut-être des vestiges,
+
+-   soit un lieu dont on sait, par des sources d'informations extra-archéologiques (archives, géomorphologie...), qu'il est susceptible de contenir des vestiges archéologiques (toponyme, zone alluviale...),
+
+-   soit enfin, un objet ou un ensemble d'objets déplacés (collection hors contexte...).
+
+Pour en savoir plus sur la base Patriarche : <https://journals.openedition.org/nda/498>
+
+Thesaurus Patriarche : <https://www.culture.gouv.fr/Regions/Drac-Pays-de-la-Loire/Politique-et-actions/Archeologie/En-pratique/Mon-espace/Archeologue/Thesaurus-Patriarche>
+:::
+:::
+
+
+
+<!-- ******************* -->
+<!-- PARTIE -->
+<!-- ******************* -->
+
+
+::: {.callout-section .callout-note collapse="true"}
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+##### Qu'est-ce que l'IGN ?
+
+
+L'Institut national de l'information géographique et forestière est un établissement public à caractère administratif ayant pour mission d'assurer la production, l'entretien et la diffusion de l'information géographique de référence en France.   
+L'Institut national de l'information géographique et forestière (IGN) diffuse ses données sous la forme de flux ou de fichiers à téélcharger. <https://geoservices.ign.fr/services-web> et <https://geoservices.ign.fr/telechargement>.
+
+Depuis le 1er janvier 2021, l'Institut national de l'information géographique et forestière (IGN),L'IGN a longtemps joui d'une situation de rente économique, rend libres et gratuitement accessibles ses données publiques concernant la topographie, les infrastructures et le relief français. 
+
+:::
+
+
+##### Données utiles 
+
+### Données administratives
+
+#### IGN Données "administratif" (vectoriel)
+
+Données "administratif" vecotrielles en WFS
+
+-   Page d'information : <https://geoservices.ign.fr/services-web-experts-administratif>
+-   URL du flux : <https://wxs.ign.fr/administratif/geoportail/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities>
+
+:::{.callout-tip collapse=false appearance='default' icon=true}
+- Connexion à créer directement dans l'explorateur de QGIS.
+- lorsque vous travaillez sur les communes à l'échelle d'un département ou d'une région, il Indiquez une limite max d'entités à afficher par requête si les entités sont très nombreuses pou en accéder l'affichage 
+Lorsque vous travaillez avec ce type de données, à chaque changement d'échelle ou déplacement de la carte, l'affichage des entités est réactualisé, ce qui prend quelques secondes.
+::: 
+
+
+
+
+
+### Parcellaire
+
+#### IGN Données "parcellaire" (raster)
+
+Données "parcellaire" en WMTS
+
+-   Page d'information : <https://geoservices.ign.fr/services-web-experts-parcellaire>
+-   URL du flux : <https://wxs.ign.fr/parcellaire/geoportail/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetCapabilities>
+
+### Carte topographique
+
+
+ IGN Scan 25 /100 (raster)
+
+
+##### Bd topo (vecteur)
+
+Téléchargement : <https://geoservices.ign.fr/telechargement#donn%C3%A9es-bd-parcellaire-image-histo>
+
+
+### Altimétrie
+
+#### Courbes de niveau
+
+En cartographie, les altitudes sont habituellement représentées par des courbes de niveaux et des points cotés.
+
+Tous les points du relief qui ont la même altitude forment une courbe de niveau. Cette ligne est fermée.
+
+Les courbes de niveaux ont des équidistances variables de 20 mètres  à 10 mètres en fonction du relief. Plus l'équidistance est petite plus la carte est précise. Certaines courbes ont un dessin renforcé en épaisseur : ce sont les courbes maîtresses. Les courbes maitresses portent un nombre qui indique leur altitude. Ce nombre est dessiné de telle façon que l'altitude plus haute soit au dessus de lui
+
+##### Courbes de niveau IGN
+
++----------------------+---------------------------------------------------------------------------+
+| Adresses             | <https://geoservices.ign.fr/documentation/donnees/alti/courbes-de-niveau> |
++======================+===========================================================================+
+| Intitulé             | Bourges- Port-Sec Sud (Cher-France)                                       |
++----------------------+---------------------------------------------------------------------------+
+| Fournisseur          | IGN                                                                       |
++----------------------+---------------------------------------------------------------------------+
+| Catégorie de données | Fichier vectoriel                                                         |
++----------------------+---------------------------------------------------------------------------+
+| Fichiers             | téléchargement ftp par dalles de 40 km.                                   |
+|                      |                                                                           |
+|                      | Équidistance de 5m.                                                       |
++----------------------+---------------------------------------------------------------------------+
+
+#### IGN BD ORTHO® {.unnumbered}
+
+Données "altimétrie" en WMS :
+
+-   Page d'information : <https://geoservices.ign.fr/services-web-experts-altimetrie>
+
+-   URL du flux : <https://wxs.ign.fr/altimetrie/geoportail/r/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities>
+
+Estompage
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Modèle numérique de terrain BD Alti                                                                                                                                      |
++==========================================================================================================================================================================+
+| La BD ALTI apporte une 3^ème^ dimension pour représenter et analyser le territoire à moyenne échelle.La BD ALTI est la version sous-échantillonnée du RGE ALTI® qui est\ |
+| le nouveau référentiel altimétrique.                                                                                                                                     |
+|                                                                                                                                                                          |
+| Précision : pas de 25m                                                                                                                                                   |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+| ELEVATION.ELEVATIONGRIDCOVERAGE                                                                                                      |
++======================================================================================================================================+
+| Le RGE ALTI® décrit la forme et l'altitude normale de la surface du sol à grande échelle. (MNT) au pas de 1 m sur la France entière. |
++--------------------------------------------------------------------------------------------------------------------------------------+
+
+|     |     |
+|-----|-----|
+|     |     |
+
+#### BD ALTI : pas de 25 m RGE Alti : pas de 1 m.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::::
+
+
+
+<!-- ******************* -->
+<!-- PARTIE -->
+<!-- ******************* -->
+
+::: {.callout-section .callout-note collapse="true"}
+
+#### OpenStreetMap
+
+
+### Qu'est ce que OpenStreeMap ?
+
+OpenStreetMap (OSM) est un projet Service collaboratif de cartographie en ligne qui vise à constituer une base de données géographiques libre du monde. Il a été initié en juillet 2004 par Steve Coast à l'University College de Londres.
+
+### Fond cartographique complet
+
+Les tuiles OSM de 256px par 256px au format png sont accessibles dans QGIS dans l'**explorateur XYZ Tiles**.
+
+
+##### OpentopoMap (raster)
+
+OpenTopoMap est un projet visant à créer un rendu de cartes topographiques à partir de données OSM et SRTM. Il inclut des courbes de niveau et l'ombrage du relief. Les tuiles sont disponibles depuis {a\|b\|c}.tile.opentopomap.org/{z}/{x}/{y}.png ([\<https://wiki.openstreetmap.org/wiki/FR:OpenTopoMap\>](https://wiki.openstreetmap.org/wiki/FR:OpenTopoMap){.uri}).
+
+::: {.callout-section .callout-note collapse="true"}
+
+
+
+
+
+
+
+
+
+#### XYZ topo server ESRI
+
+Représentation en nuances de gris du relief avec prise en compte de la position relative du soleil pour l'ombrage de l'image. La symbologie de type multiplier permet d'associer l'ombrage à une autre couche.\
+URL du flux : <http://services.arcgisonline.com/ArcGIS/rest/services/Elevation/World_Hillshade/MapServer/tile/%7Bz%7D/%7By%7D/%7Bx%7D>
+
+###### Carte d'Etat major {.unnumbered}
+
+https://geoservices.ign.fr/bdcarto-em
+
+https://infoterre.brgm.fr/page/geoservices-ogc

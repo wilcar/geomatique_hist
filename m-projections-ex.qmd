@@ -1,0 +1,96 @@
+
+# Exemples de projections cartographiques
+
+
+```{=html}
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+```
+
+## <iconify-icon icon="ph:seal-question" style="font-size: 25px;"></iconify-icon> Repères
+
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+### Fiche de synthèse
+![](images/projec/poster.JPG){width="787"}
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+### La projection de Mercator
+
+![**Projection de Mercator** (Colonies françaises par Vidal-Lablache, Gallica)](images/projec/Planisph%C3%A8re_Colonies_fran%C3%A7aises.jpeg){fig-align="center" width="400"}
+
+![**Projection de Mercator** (Le monde selon Web Mercator.L'Afrique apparaît de taille équivalente au Groenland alors qu'elle est de 14 à 15 fois plus étendue, Mapbox.com)](images/projec/mercator-size.jpeg){fig-align="center" width="400"}
+
+La projection est établie à la fin du XVIe siècle à des fins de navigation. Cette projection est conforme ce qui permet de reporter directement sur la carte les angles mesurés au compas. Elle préserve les formes des territoires mais en contrepartie délivre une image erronée des aires et des distances. Les distorsions augmentent au fur et à mesure que l'on s'éloigne de l'équateur et deviennent extrêmes dans les régions polaires à tel point que l'Afrique apparaît de taille équivalente au Groenland alors qu'elle est de 14 à 15 fois plus étendue.
+
+La carte de Mercator est particulièrement répandue. Elle fut par exemple utilisée en France pour dresser les planisphères de l'importante collection de cartes murales parue en 1885 destinée aux écoles communales et complétée plus tard d'atlas scolaires.
+
+La cartographie web ou *webmapping* a redonné à Mercator un nouvel attrait. Les dérivées de cette projection (Web Mercator ","pseudo Mercator") préservant les directions. Depuis 2018, Google maps a abandonné cette projection à l'échelle globale au profit d'un d'un pseudo globe à la manière de Google earth grace la technologie webGL.
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+### La projection de Peters
+
+![**Projection de Peters** (Oxford cartographers).](images/projec/peters.png){fig-align="center" width="400"}
+
+La projection équivalente de Peters proposée en 1973 propose une vision renouvelée de la cartographie en tentant de répondre aux distorsions de la projection de Mercator en prenant en compte la taille réelle des continents.
+
+Selon *The Guardian* (1973), Peters aurait ainsi déclaré lors de la conférence de présentation de sa projection que "Mercator présente une image totalement fausse, en particulier en ce qui concerne les terres non peuplées de Blancs. Elle survalorise l'homme blanc et déforme l'image du monde à l'avantage des maîtres coloniaux de l'époque".
+
+La projection a suscité un débat intense parmi les cartographes sur les liens entre idéologie et cartographie, tout en étant simultanément défendue par des organisations non gouvernementales internationales telles que l'ONU comme un correctif de la marginalisation des pays en développement.
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+### Les projections pseudo-cylindriques
+
+![**Projection Hecket IV** (Le dessous des cartes).](images/projec/dessous.png){fig-align="center" width="400"}
+
+Ces projections sont adaptées à la cartographie des planisphères. Les plus courantes sont les projections de Mollweide (1805), Van der Grinten (1898), Hecket IV (1906) - utilisée par l'émission le dessous des cartes, Winkel tripel (1921), Goode (1923) - écorcée comme une orange, Robinson (1963), La dernière en date, la projection Equal Earth (2011) ambitionne de proposer le meilleur compromis possible entre conservation des formes et des surfaces.
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+### Les projections Polyhédrales
+
+margin ![Projection de Fuller (Sciences po).](images/projec/fuller2.JPG){width="400"}
+
+Ces projections sont basées sur une modélisation polyèdrale de la terre (solide composé de faces polygonales). Buckminster Fuller adopte ce principe en 1946 en projetant la surface de la terre sur une figure à 20 côtés aussi appelée icosahèdre (le polyèdre est ensuite mise à plat).
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+### Les projections azimutales polaires
+
+La plus ancienne projection azimutale centrée sur le pôle Nord, est due à Guillaume Postel, dont la carte a été éditée en 1581. l'emblème des nations Unies l'adopte comme Le motif central, entouré de rameaux d'olivier.
+
+![**Projection polaire** (Drapeau de l'ONU.)](images/projec/onu.JPEG){fig-align="center" width="200"}
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+### Les projections coniques
+
+Les projections coniques sont inappropriées pour les cartes du monde et trouvent leur meilleur usage dans la cartographie des masses continentales de l'hémisphère nord, telle celles des États-Unis d'Amérique, de l'Europe, ou de la Russie. La projection conique de Lambert est employée comme projection officielle pour les cartes de France métropolitaine depuis le décret 26 décembre 2000 (Lambert93). Elle est également préconisée par la directive européenne INSPIRE pour les cartes de l'Europe (ETRS89).
+
+![**Projection conique** (Russie)](images/projec/atlas-historique-S7063V1.png){fig-align="center" width="400"}
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+### Les projection non-mathématiques
+
+La projection Bertin de 1953 se présente sous la forme d'un dessin qui se base sur une compensation régionale dans laquelle la compensation n'est plus homogène mais recherchée dans une plus grande déformation des océans, au bénéfice d'une moindre déformation des continents.\
+Elle est couramment employée pour des cartes géopolitiques.
+
+![**Projection Bertin (1953)** (L'incartolycee.net).](images/projec/bertin_mondialisation.JPG){fig-align="center" width="400"}
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+### Les projections orthographiques vue de l'espace
+
+Ces projections ont pour particularité de représenter la Terre en simulant une vue de l'espace, avec un angle d'inclinaison visant le centre du globe.Les surfaces, les distances et les angles sont particulièrement déformés excepté le centre de la carte.
+
+![**Projection orthographique** (Le Monde en cartes, 30 janv. 2023).](images/projec/FnvEttNXEAIhgf7.JPEG){fig-align="center" width="400"}
+
+
+:::
+
+
+
+

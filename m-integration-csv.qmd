@@ -1,0 +1,103 @@
+# Fichiers de données textuelles délimitées (CSV)
+
+```{=html}
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+```
+
+Les fichiers textuels peuvent être de deux types différents :
+
+-   avec géométrie : le fichier permet de cartographier directement des entités. Pour cela, il stocke leur géométrie dans une ou plusieurs colonnes sous la forme de coordonnées en longitude et latitude.
+-   sans géométrie : le fichier contient des données qui devront être reliées ultérieurement à des entités par **jointure attributaire**.
+
+
+
+## <iconify-icon icon="ph:seal-question" style="font-size: 25px;"></iconify-icon> Importation des fichiers ne comportant pas de géométrie
+
+::: {.partie .callout-note collapse="true" appearance="minimal"} 
+##### Importation
+
+###### Chargement d'un fichier csv
+
+Les fichiers CSV peuvent être chargé sous forme d'une couche de "texte délimité" dans QGIS de deux manières différentes :  
+
+- Par le Menu **Ajouter une couche> Ajouter une couche**.  
+- Par le bouton **Gestionnaire de source de données** de la **barre d'outils**.  
+
+
+La zone d'aperçu permet de juger de la restitution des données à partir des premières lignes.
+
+###### Colonnes
+
+-   Vérifiez la bonne restitution des colonnes dans la zone d'aperçu.
+-   Modifiez le séparateur de champs employé si nécessaire (le séparateur de champs par défaut est la virgule, en France, le point-virgule est également très employé).
+
+
+
+###### Valeurs
+
+-   Vérifiez la bonne restitution des valeurs dans la zone d'aperçu.
+-   Valeurs textuelles : vérifiez la bonne restitution des caractères. Modifiez le codage des caractères lorsque certains caractères ne sont pas affichés correctement (cela revient le plus souvent à sélectionner *System* ou *utf-8*).
+-   Valeurs numériques : précisez en fonction de vos données si la virgule est employée comme séparateur décimal.
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"} 
+## Jointure
+Dans un logiciel SIG, une jointure attributaire consiste à lier des données exogènes \[au sig\] à une couche vectorielle. Le jointure permet ainsi de compléter des objets vectoriels référencés par des données attributaires [^m-integration-1] [^m-integration-2].
+
+[^m-integration-1]: <http://www.ades.cnrs.fr/tutoqgis/08_01_jointure_attrib.php>
+
+[^m-integration-2]: <http://www.geoinformations.developpement-durable.gouv.fr/fichier/pdf/QGIS_jointure_avec_fichier_externe_cle5beef4.pdf?arg=177828611&cle=3a1f046f0dcb9df9a87a49ae4ab5f1766621b2fc&file=pdf%2FQGIS_jointure_avec_fichier_externe_cle5beef4.pdf>
+
+-   La jointure est déterminée par la mise en relation d'une information commune aux tables appelés "identifiants"" au "clés"
+-   Ces identifiants doivent permettant d'identifier de manière unique chaque ligne d'une table. Deux lignes ne peuvent donc posséder le même identifiant. Chaque ligne doit posséder un identifiant. ex: de clé : code insee des communes. code rivoli de voirie.
+-   Les clés servent à établir des relations entre les tables appelées jointures. Ces relation sont dites de de un-à-un. Un enregistrement d'une table est en relation avec un seul enregistrement d'une autre table.
+-   La jointure conduit à la création d'une table virtuelle réunissant les colonnes, ou attributs, des différentes tables.
+
+:::
+
+
+
+
+
+
+
+
+
+
+## <iconify-icon icon="ph:seal-question" style="font-size: 25px;"></iconify-icon> Importation des fichiers  comportant une  géométrie
+::: {.partie .callout-note collapse="true" appearance="minimal"} 
+##### Importation
+
+###### Chargement d'un fichier csv
+
+Les fichiers CSV peuvent être chargé sous forme d'une couche de "texte délimité" dans QGIS de deux manières différentes :  
+
+- Par le Menu **Ajouter une couche> Ajouter une couche**.  
+- Par le bouton **Gestionnaire de source de données** de la **barre d'outils**.  
+
+
+La zone d'aperçu permet de juger de la restitution des données à partir des premières lignes.
+
+###### Colonnes
+
+-   Vérifiez la bonne restitution des colonnes dans la zone d'aperçu.
+-   Modifiez le séparateur de champs employé si nécessaire (le séparateur de champs par défaut est la virgule, en France, le point-virgule est également très employé).
+
+
+
+###### Valeurs
+
+-   Vérifiez la bonne restitution des valeurs dans la zone d'aperçu.
+-   Valeurs textuelles : vérifiez la bonne restitution des caractères. Modifiez le codage des caractères lorsque certains caractères ne sont pas affichés correctement (cela revient le plus souvent à sélectionner *System* ou *utf-8*).
+-   Valeurs numériques : précisez en fonction de vos données si la virgule est employée comme séparateur décimal.
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"} 
+###### Géométrie
+
+-   Le CSV peut comporter des colonnes de coordonnées en longitude et latitude. Si les coordonnées sont définies en degrés/minutes/secondes, cochez la case Coordonnées DMS.
+-   Le CSV peut comporter une colonne de géométrie au format Well Known Text (WKT).
+-   Vous devez enfin indiquer le système de coordonnées de référence qui a été utilisé pour déterminer les coordonnées de points. (habituellement EPSG:4326)
+:::
+
+

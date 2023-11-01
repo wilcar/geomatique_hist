@@ -1,0 +1,433 @@
+
+
+
+span.numblack {
+   border-radius: 0.8em;
+   background: #fff;
+   border: 1px solid grey;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: grey;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 10px;
+  text-align: center;
+  width: 1.6em; 
+  font-size: 14px !important;
+}
+
+
+
+span.numblack2 {
+  background: black;
+   border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 10px;
+  text-align: center;
+  width: 1.6em; 
+  font-size: 16px !important;
+  vertical-align: align-bottom;
+
+}
+
+
+/* en-tête des tables html */
+
+.table .header {
+  padding: 30px;
+  background: Gainsboro;
+  margin-bottom: 30px;
+}
+
+
+.table th, .table td {
+  padding: 1rem;
+  font-size: 12px !important;
+}
+
+
+
+h5 {
+  font-size: 14px !important;
+    font-weight: 500;
+    color: #696B6C;
+
+
+}
+.resume {
+     font-size: 14px;
+     background-color: Gainsboro;
+     border-radius: 0px 0px 0px 0px;
+}
+
+
+
+
+
+
+
+
+.box{
+  padding: 5px;
+  font-size: 16px;
+  border-width: 1px;
+  border-color: #CCCCCC;
+  background-color: #91aeb3;
+  color: #ffffff;
+  border-style: solid;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px rgba(66,66,66,.75);
+  text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+}
+
+
+.hscroll {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+
+.bleu {
+	background-color:transparent;
+	border-radius:28px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	color:#210021;
+	font-family:Arial;
+	padding:16px;
+	text-decoration:none;
+}
+
+
+
+
+
+
+ref {
+  font-size: 16px;
+}
+
+/* vidéo responsive */
+
+.video-responsive { 
+overflow:hidden; 
+padding-bottom:56.25%; 
+position:relative; 
+height:0;
+}
+
+.video-responsive iframe {
+left:0; 
+top:0; 
+height:100%;
+width:100%;
+position:absolute;
+}
+
+
+/* compteurs des exercices */
+div {
+  counter-reset: exo-counter 0; /* 👈 */
+}
+
+
+
+
+
+
+
+
+
+.iconpre{
+color: #3F85AF;
+vertical-align: middle;
+font-size: 30px !important;
+}
+
+
+.header {
+  padding: 30px;
+  background: #EDFBFF;
+  margin-bottom: 30px;
+
+}
+
+
+
+.cartouche {
+    color: #000;
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0);
+    font-family (stack): ProximaNova, Arial, Helvetica, sans-serif;
+    font-size: 52px !important; 
+    letter-spacing: normal; 
+    word-spacing: 0px;
+    font-weight: 700;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-align: left;
+    border: 2px solid  #000;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 22px;
+    min-width: 12px;
+    padding: 10px 5px 10px;
+    line-height: 0 !important;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.titrepage {
+    color: DimGray;
+    font-family (stack): ProximaNova, Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    word-spacing: 0px;
+    font-weight: bold !important;
+    font-style: normal;
+    font-variant: normal;
+    text-indent: 0px;
+    margin-top: 10px;
+}
+
+
+.wrapper2 {
+    position:relative;
+    min-height:  200px ;
+    height:  3 %>% 00px ;
+    overflow:hidden;
+  
+}
+
+.wrapper2 iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position:relative;
+    padding-bottom:56%;
+    min-height:  400px ;
+    overflow:hidden;
+  
+}
+.wrapper iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Formules */
+
+
+.formules {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin: 10px 0px 25px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  overflow: auto;
+  box-sizing: border-box;
+  font-size: 1em;
+  line-height: 1.33em;
+  padding: 10px 20px 0px;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #e3f2fd; 
+  display: inline-block;
+}
+
+
+.formules2 {
+  position: relative;
+    vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin: 10px 0px 25px;
+  overflow: auto;
+  box-sizing: border-box;
+  font-size: 1em;
+  line-height: 1.33em;
+  padding: 10px 20px 0px;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #e3f2fd; 
+  display: inline-block;
+}
+
+
+/* boite */
+
+
+.boite_blanc {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin-top: 50px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  overflow: auto;
+  box-sizing: border-box;
+  font-size: 1em;
+  line-height: 1.33em;
+  padding: 00px 20px 10px;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: rgb(255, 255, 255);
+  border-bottom-width: 2px;
+  border-color: black;
+} 
+  
+  
+
+
+
+/* exemple */
+
+.exemple {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  overflow: auto;
+  box-sizing: border-box;
+  font-size: 0.9em;
+  line-height: 1.33em;
+  padding: 10px 10px 5px;
+  border: 2px solid #2780E3;
+
+} 
+
+.exemple2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  overflow: auto;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 10px 10px ;
+border: 2px solid #2780E3;
+; 
+} 
+
+.extitre{
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+
+
+
+
+
+
+.doc {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin: 10px 10px 25px 25px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  overflow: auto;
+  box-sizing: border-box;
+  font-size: 1em;
+  line-height: 1.33em;
+  padding: 10px 20px 10px;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #fffde7; 
+  display: inline-block;
+
+}
+
+.exos::before {
+  counter-increment: exo-counter;
+  content: counter(exo-counter) " ";
+  margin-top: 0px;
+  padding-top: ;
+  width:25px;
+  height:25px;
+  display:inline-flex;
+  align-items:center;
+  justify-content: center;
+  font-size:12px;
+  background-color:#424242;
+  border-radius:50%;
+  color:#fff;
+  font-weight: 600;
+}
+
+  
+.exos {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin: 0px 0px 5px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  overflow: auto;
+  box-sizing: border-box;
+  font-size: 1em;
+  line-height: 1.33em;
+  padding: 10px 10px 0px;
+  color: #55595C;
+  background-color: #FFFEF8; 
+  display: inline-block;
+
+}
+
+mark {
+  background-color: #e3f2fd;
+}
+
+

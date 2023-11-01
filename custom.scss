@@ -1,0 +1,379 @@
+
+
+.callout.callout-style-simple {
+  padding: .4em .7em;
+  border-left: 5px solid;
+    border-left-color: currentcolor;
+  border-right: 1px solid rgba(0,0,0,.05);
+  border-top: 0px !important;
+  border-bottom: 0px !important;
+  border-right: 0px !important;
+  
+}
+
+
+/*-- scss:defaults --*/
+$background-color: #fff !default;
+$font-sizex: 22px !default;
+$font-weight: 400 !default;
+$font-sizeh5: 15px !default;
+$font-weighth: 400 !default;
+$toc-font-size: 15px !default;
+$font-ls25: 0.25% !default;
+
+/*-- scss:rules --*/
+
+
+
+
+
+
+
+/*-- H1 obligatoire pour figurer dans le menu de gauche  --*/
+h1 {
+  color: #000;
+  font-size: 24px;
+
+}
+
+
+h2 {
+  color: #212121 !important;
+    font-size: 20px;
+}
+
+
+
+h4 {
+  margin-top: 0px !important;
+}
+
+
+
+h5 {
+  font-size: $font-sizeh5;
+    font-weight: 600;
+    color: #212121 !important;
+}
+
+h6 {
+  font-size: 16px;
+    font-weight: 800;
+    color: #000!important;
+    text-transform: none !important;
+    line-height: 19.5px !important;
+    vertical-align: baseline !important;
+    letter-spacing: 1px !important;
+    word-spacing: 0px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    padding-top: 10px !important;
+    font-weight: 800;
+    font-style: normal;
+    font-variant: normal;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-stretch: 100%;
+    font-variation-settings: normal;
+    font-feature-settings: normal;
+    text-transform: none;
+    text-decoration: rgb(0, 0, 0);
+    text-align: start;
+    text-indent: 0px;
+
+
+}
+
+p {
+  font-size: 16px !important;
+  color: #55595C; 
+    line-height: 19.5px;
+    letter-spacing: 0.5px;
+    word-spacing: 0px;
+    margin: 0px !important;
+    font-weight: 400;
+} 
+
+
+
+
+ul li{
+  color: #55595C ;
+  font-size: 15px ;
+  line-height: 19.5px ;
+  letter-spacing: 0.5px ;
+  padding-top: 0px;
+
+}
+
+ol li{
+  color: #55595C ;
+  font-size: 15px ;
+  line-height: 19.5px ;
+  letter-spacing: 0.5px ;
+  
+}
+
+
+
+
+
+
+figcaption {
+  font-size: 14px !important;
+      text-transform: none !important;
+    line-height: 19.5px !important;
+    vertical-align: baseline !important;
+    letter-spacing: 0.25px !important;
+    word-spacing: 0px !important;
+    margin: 0px !important;
+    padding-left: 25px !important;
+    padding-top: 0px !important;
+    font-weight: 800 !important;
+    font-style: normal !important;
+    font-variant: normal !important;
+    font-kerning: auto !important;
+    font-optical-sizing: auto !important;
+    font-stretch: 100% !important;
+    font-variation-settings: normal !important;
+    font-feature-settings: normal !important;
+    text-transform: none !important;
+    text-align: start !important;
+    text-indent: 0px !important;
+}
+
+
+.glightbox-clean .gslide-title {
+    font-size: 14px !important;
+    text-transform: none !important;
+    line-height: 19.5px !important;
+    vertical-align: baseline !important;
+    letter-spacing: 0.25% !important;
+    word-spacing: 0px !important;
+    margin: 0px !important;
+    padding-left: 25px !important;
+    padding-top: 0px !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    font-variant: normal !important;
+    font-kerning: auto !important;
+    font-optical-sizing: auto !important;
+    font-stretch: 100% !important;
+    font-variation-settings: normal !important;
+    font-feature-settings: normal !important;
+    text-transform: none !important;
+    text-align: start !important;
+    text-indent: 0px !important;
+}
+
+
+
+
+
+
+.quarto-listing-category .category {
+    font-size: 14px !important;
+    text-transform: none !important;
+    line-height: 19.5px !important;
+    vertical-align: baseline !important;
+    letter-spacing: 0.25% !important;
+    word-spacing: 0px !important;
+    margin: 0px !important;
+    padding-left: 25px !important;
+    padding-top: 0px !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    font-variant: normal !important;
+    font-kerning: auto !important;
+    font-optical-sizing: auto !important;
+    font-stretch: 100% !important;
+    font-variation-settings: normal !important;
+    font-feature-settings: normal !important;
+    text-transform: none !important;
+    text-align: start !important;
+    text-indent: 0px !important;
+}
+
+
+
+
+
+
+
+
+            
+
+.quarto-appendix{
+  font-size: 10px !important;
+}
+
+
+
+
+
+/*-- scss:rules --*/
+
+
+
+/*-- partie utilisé pour tout --*/
+/*-- customisation du style simple -minimal--*/
+
+
+
+.callout.callout-style-simple > div.callout-header {
+  font-size: 18px !important;
+  font-weight: 400 ;
+  color: #212121 !important;
+  padding-top: 0px !important;
+  padding-right: 10px;
+  padding-bottom: 0px !important;
+  font-weight: bold !important;
+  background-color: #fff!important;
+
+}
+
+
+div.partie.callout {
+  border-left-color: #fff;
+  border-top-color: #fff;
+  border-right-width: 0px;
+  background-color: #fff !important;
+ padding-top: 0px !important;
+}
+
+div.partie.callout-style-default>.callout-header {
+  background-color: $background-color;
+   padding-top: 0px !important;
+
+
+}
+
+
+/*-- SECTION --*/
+
+
+$background-color: #fff !default;
+$font-size_section: 22px !default;
+$font-weight_section: 500 !default;
+$font-size_screen: 2rem !default;
+$font-color_section: #000;
+
+div.callout-section.callout {
+  border-left-color: #fff;
+  border-top-color: #fff;
+  background-color: #fff !important;
+
+  }
+  
+
+div.callout-section.callout-style-default>.callout-header {
+  background-color: $background-color;
+  font-size: $font-size_section;
+  font-weight : $font-weight_section;
+  color: $font-color_section;
+    text-transform: uppercase !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-- exos --*/
+
+
+/*-- customisation du style simple -minimal--*/
+
+
+
+
+
+
+.callout.callout-style-simple > div.callout-header {
+  font-size: 24px;
+  font-weight: 400 ;
+  color: #000;
+
+}
+
+div {
+  counter-set: exercice-counter 0; /* 👈 */
+}
+
+
+
+.exercice::before {
+  counter-increment: exercice-counter;
+  content: counter(exercice-counter) " ";
+  float: left;
+  margin-right: 10px;
+  margin-top: 0px;
+  width:25px;
+  height:25px;
+  display:inline-flex;
+  align-items:center;
+  justify-content: center;
+  font-size:12px;
+  background-color:#424242;
+  border-radius:50%;
+  color:#fff;
+  font-weight: 600;
+}
+
+
+div.exercice.callout {
+  border-left-color: #fff;
+  border-top-color: #fff;
+  border-right-width: 0px;
+  background-color: #FFFEF8 !important;
+}
+
+div.exercice.callout-style-default>.callout-header {
+  background-color: $background-color;
+  font-size: $font-sizex;
+  font-weight: $font-weight;
+}
+
+
+ 
+
+
+/*-- scss:defaults --*/
+$border-color-left: #0dcaf0 !default;
+$icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/></svg>') !default;
+
+$background-color: #bfe4eb !default;
+
+
+/*-- scss:rules --*/
+
+div.callout-tweet.callout {
+  border-left-color: $border-color-left;
+}
+
+div.callout-tweet.callout-style-default>.callout-header {
+  background-color: $background-color;
+}
+
+.callout-tweet.icon .callout-icon {
+  display: unset !important;
+}
+
+div.callout-tweet.icon.callout-captioned .callout-icon::before {
+  background-image: $icon;
+}
+
+.callout-tweet.icon.callout-style-default div.callout-icon-container {
+  padding-top: 0.1em;
+  padding-right: 0.35em;
+}
+
+
+

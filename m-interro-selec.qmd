@@ -1,0 +1,219 @@
+# Interrogation par sélection d'entités
+
+```{=html}
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+```
+## <iconify-icon icon="ph:seal-question" style="font-size: 25px;"></iconify-icon> Repères
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+##### Les outils de sélection d'entités
+
+###### Sélection d'un entité
+
+Bouton ![](images/icones/qgis%20QGIS%20master%20images-themes_default/ico-utiles/mActionSelectRectangle.png){width="25"}.
+
+###### Sélection de plusieurs entités 
+
+- Bouton ![](images/icones/qgis%20QGIS%20master%20images-themes_default/ico-utiles/mActionSelectRectangle.png){width="25"}.
+-   en combinant le bouton de sélection ![](images/icones/qgis%20QGIS%20master%20images-themes_default/ico-utiles/mActionSelectRectangle.png){width="25"} et la touche <kbd>Ctrl</kbd> ;
+-   en utilisant un outil de sélection particulier comme **par rayon**, **à main levée**, **polygonale**, **selon une valeur** ou **une expression**, etc. (boutons de la barre d'outils ![](images/icones/qgis%20QGIS%20master%20images-themes_default/ico-utiles/selection.PNG){width="159"}).
+
+###### Déselection
+
+Pour de-sélectionner des entités, cliquez sur le bouton
+![](images/icones/qgis%20QGIS%20master%20images-themes_default/ico-utiles/mActionDeselectAll.png){width="25"}.
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+
+##### Filtrer la sélection courante selon une valeur
+
+1.  Sélectionnez des entités.
+2.  Cliquez le sur le bouton **Sélectionner des entités selon une valeur**.
+3.  Saisissez la valeur souhaitée.
+4.  Filtrez la sélection courante (bouton **Sélection des entités**).
+
+![Fenêtre de sélection des entités selon une valeur.](images/methodes/selec-valeur.PNG){width="400"}
+:::
+
+
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+##### Résumé statistique de la sélection
+
+1. Sélectionnez des entités.
+2.  Cliquez sur le bouton ![](images/icones/qgis%20QGIS%20master%20images-themes_default/ico-utiles/mAlgorithmBasicStatistics.png){width="25"}.
+3.  Sélectionnez la couche, l'attribut et cochez la case **Entité(s) sélectionnée(s) uniquement**.
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+##### Entités sélectionnées dans la table attributaire
+
+-   Pour accéder à la table attributaire, cliquez sur le bouton ![](images/icones/qgis%20QGIS%20master%20images-themes_default/ico-utiles/attributes.png){width="25"}).
+-   Les lignes correspondant aux entités sélectionnées sont surlignées en bleu.\
+-   Pour les isoler, utilisez l'outil **Déplacer la sélection au sommet** (bouton![](images/icones/qgis%20QGIS%20master%20images-themes_default/ico-utiles/mActionSelectedToTop.png){width="25"}).\
+-   Les lignes déplacées au sommet peuvent être triées indépendamment des autres lignes de la table.=false'
+:::
+
+## <iconify-icon icon="solar:pen-new-round-linear" style="font-size: 25px;"></iconify-icon> Activités
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+### Sélectionner, identifier, dénombrer les entités archéologiques en région Pays de la Loire
+
+::: panel-tabset
+## Données
+
+Les données sont issues de l'Atlas du patrimoine.
+
+## Fichiers
+
+-   Téléchargez le fichier zip "archéo-pdl-06-23" depuis Madoc.
+
+-   Windows 10 : **Clic-droit\> Extraire tout** puis **exécutez** le fichier "archéo-pdl.qgz".
+
+-   MacOs : **exécutez** le fichier "archéo-pdl.qgz".
+
+::: {.callout-warning collapse="true" appearance="default" icon="true"}
+## Bug d'affichage du fond de carte OpenStreetMap en salle informatique
+
+En salle informatique, le fond carte OpenStreetMap peut ne pas s'afficher. Pour régler le problème procédez à un {{< kbd Ctrl-Alt-Suppr >}} puis **Se déconnecter** et recommencez...
+:::
+
+## Questions
+
+[1]{.numblack} Combien d'EA sont situées l'île d'Yeu ?
+
+[2]{.numblack} Combien d'EA sont situées l'île de Nantes ?
+
+[3]{.numblack} Parmi les entités de l'île de Nantes, combien de blockhaus relève-t-on ?
+
+[4]{.numblack} Combien d'EA sont situées dans un rayon de 1 km autour de la cathédrale de Luçon ?
+
+[5]{.numblack} Combien d'EA sont des moulins (de toutes catégories) ?
+
+[6]{.numblack} Comment s'appelle le moulin le plus proche de la Roche/Yon ?
+
+-   La Plissonière.
+
+-   Moulin du fief de la Gerbaudière.
+
+-   Le moulin de Joubert
+
+[7]{.numblack} Combien d'entités relève-ton-sur la commune de Guérande (COMMUNE_PP : 44 069) ?
+
+[8]{.numblack} Combien de four à sel relève-t-on sur le territoire de la commune de Guérande (COMMUNE_PP : 44 069) ?
+
+[9]{.numblack} Combien de fossés (ou réseaux de fossés) relève-t-on sur le territoire de la commune de Guérande (COMMUNE_PP : 44 069) ?
+
+<!-- La Plissonière -->
+
+```{=html}
+<!-- 
+
+Combien d'EA sont situées l'ile d'yeu ? (249)
+Combien d'EA sont situées l'ile de Nantes ?  14
+Parmis les entités de l'ile de Nantes ,combien sont des blockaus ? 10
+combien d'EA sont situées dans un rayon de 1 km autour de la cathédrale de Luçon ? (13)
+combie d'ea sont des moulins ?
+Comment s'appelle le moulin le plus proche de la Roche/Yon ? La Plissonière.
+Combien d'entités relève-ton-sur la commune de Guérande (COMMUNE_PP : 44 069) ? 642
+Combien de four à sel relèvet-t-on sur le territoire de la commune de Guérande ? 8
+Combien de fossés (ou réseaux de fossés)  relève-t-on sur le territoire de la commune de Guérande ? 90
+
+
+
+
+-->
+```
+:::
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+### Sélectionner, dénombrer, identifier les sites antiques de la base Pleiade
+
+::: panel-tabset
+## Données
+
+Les données sont issues de la base Pleiades.
+
+## Fichiers
+
+-   Téléchargez le fichier zip "pleiades-07-23" depuis Madoc.
+
+-   Windows 10 : **Clic-droit\> Extraire tout** puis **exécutez** le fichier "pleiades-06-23.qgz".
+
+-   MacOs : **exécutez** le fichier "pleiades-07-23.qgz".
+
+::: {.callout-warning collapse="true" appearance="default" icon="true"}
+## Bug d'affichage du fond de carte OpenStreetMap en salle informatique
+
+En salle informatique, le fond carte OpenStreetMap peut ne pas s'afficher. Pour régler le problème procédez à un {{< kbd Ctrl-Alt-Suppr >}} puis **Se déconnecter** et recommencez...
+:::
+
+## Questions
+
+[1]{.numblack} Combien de sites sont répertoriés en Crête ?
+
+<!-- 279 -->
+
+[2]{.numblack} Combien de sites sont répertoriés en Corse ? <!-- 57 -->
+
+[3]{.numblack} Parmi les sites répertoriés en crête, combien sont des théâtres ?
+
+<!-- 5 -->
+
+[4]{.numblack} Combien de sites sont répertoriés dans un rayon de 1 km autour du Colisée de Rome ?
+
+<!-- 54 -->
+
+[5]{.numblack} Combien d acqueducs (place types) sont rencencés dans la base ?
+
+<!-- 49 -->
+
+[6]{.numblack} Combien de de villas sont recensées en Sicile ?
+
+<!-- 51 -->
+:::
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+### Foyers d'émigration des femmes bretonnes recensées à Chantenay en 1906
+
+::: panel-tabset
+## Données
+
+Les données sont issues du rapport d'étape de master SCE de Maxime Furic (2023).
+
+## Fichiers
+
+-   Téléchargez le fichier zip "bretonnes-chantenay-1906.qgz" depuis Madoc.
+
+-   Windows 10 : **Clic-droit\> Extraire tout** puis **exécutez** le fichier "bretonnes-chantenay-1906.qgz".
+
+-   MacOs : **exécutez** le fichier "bretonnes-chantenay-1906.qgz".
+
+## Questions
+
+Vous répondrez aux questions sur Madoc.
+
+[1]{.numblack} Combien de femmes recensées à Chantenay en 1906 sont originaires des communes sélectionnées. Vous choisirez la proposition de réponse de la plus proche du résultats que vous avez relevé :
+
+-   279
+-   182
+-   350
+
+<!--279-->
+
+![](images/bretonnes/compter%20exo1B.PNG){fig-align="center" width="600"}
+
+[2]{.numblack} Combien de femmes recensées à Chantenay en 1906 sont originaires des communes sélectionnées. Vous choisirez la proposition de réponse de la plus proche du résultats que vous avez relevé :
+
+-   279
+-   120
+-   180
+
+![](images/bretonnes/compter%20exo2B.PNG){fig-align="center" width="600"}
+
+<!--180-->
+:::
+:::

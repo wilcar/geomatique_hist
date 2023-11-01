@@ -1,0 +1,258 @@
+---
+title: "Exercices"
+
+---
+
+# 
+
+Exercices portant sur l'intégration de données (importation de fichiers, connexion à différents géoservices).
+
+## Importation de fichiers vectoriels
+
+
+::: panel-tabset
+## Nouveau projet
+
+1.  Créez un nouveau projet dans QGIS.
+2.  Dans le panneau explorateur, sélectionnez **XYZ tiles\> OpenStreetMap**.
+
+::: {.callout-warning collapse="true" appearance="normal" icon="true"}
+## Bug d'affichage du fond de carte OpenStreetMap en salle informatique (Tertre).
+
+En salle informatique, le fond de carte OpenStreetMap peut ne pas s'afficher. Pour régler le problème procédez à un {{< kbd Ctrl-Alt-Suppr >}} puis sélectionnez **Se déconnecter** et recommencez...
+:::
+
+## Fichiers
+
+3.  RDV sur Madoc.
+4.  Téléchargez les fichiers puis débutez le test.
+
+## Questions
+
+[1]{.numblack} Quelles sont les données cartographiées ? (fichier 1)
+
+-   La crue de Paris de 1910.
+-   La crue de Nantes de 1910.
+-   La crue de Lyon de 1910.
+
+```{=html}
+<!--
+- La crue de Paris de 1910 *
+https://www.fabriquenumeriquedupasse.fr/explore/dataset/rcap-enceinte-de-thiers-1841-a-1844-emprises-des-bastions-au-sol-dap-le-plan-190/export/?flg=fr
+//-->
+```
+[2]{.numblack} Quelles sont les données cartographiées ? (fichier 2)
+
+-   L'enceinte de Thiers (1841 à 1844), Emprises des bastions au sol d'après le plan 1900.
+-   Lutèce antique, Limite de la ville.
+-   Les fortifications médiévales et modernes de la ville de Nantes.
+
+```{=html}
+<!--
+
+https://www.fabriquenumeriquedupasse.fr/explore/dataset/rcap-enceinte-de-thiers-1841-a-1844-emprises-des-bastions-au-sol-dap-le-plan-190/information/?flg=fr
+//-->
+```
+```{=html}
+<!--
+- Clermont-Ferrand, Délimitation des îlots  1897 
+
+https://www.fabriquenumeriquedupasse.fr/explore/dataset/clermont-ferrand-ilots-urbains-en-1897/map/?basemap=jawg.streets&location=14,45.7829,3.11142
+
+//-->
+```
+```{=html}
+<!--
+- Lille, Délimitation des îlots vers 1898 
+https://www.fabriquenumeriquedupasse.fr/explore/dataset/lille_time-machine-ilots_annotations_vers_1898/map/?location=12,50.63105,3.04711&basemap=jawg.streets
+//-->
+```
+[3]{.numblack} De quelle carte ancienne s'agit-il ? (fichier 3)
+
+-   La partie francoise de I'isle de Saint Domingue par Bellin (1764).
+-   Le plan de la ville Nantes par Sebire (1795).
+-   Le cadastre de Paris par îlot, dit Atlas Vasserot (1810-1836).
+
+```{=html}
+<!--
+Autres fichiers pour devoir (fichiers ur madoc. Bcp de chose sur la fabrique numérique du passé)
+//-->
+```
+```{=html}
+<!--
+Letts, Son & Co.
+Date:
+1883
+Short Title:
+London. 
+
+
+Author:
+Houze, Antoine Philippe
+Date:
+1844
+Short Title:
+La France 1589 a 1643. 
+
+
+
+Author:
+Poirson, J.B.
+Author:
+Herbin de Halle, Etienne de.
+Date:
+1803
+Short Title:
+Carte des iles Antilles. Par J.B. Poirson . Nivose An XI, 1803 
+
+
+
+Author:
+Jouvet et Cie.
+Date:
+1882
+Short Title:
+France Forestiere. 
+
+
+Author:
+Jouvet et Cie.
+Date:
+1882
+Short Title:
+Communications Rapide du Territoire Francais. 
+
+
+Author:
+Bartholomew, J. G. (John George), 1860-1920
+Author:
+John Bartholomew and Son
+Date:
+1922
+Short Title:
+Baltic States & East Prussia. 
+
+
+//-->
+```
+:::
+
+
+
+## Connexion à un géoservices
+
+
+
+
+
+::: panel-tabset
+
+## Nouveau projet
+
+1.  Créez un nouveau projet dans QGIS.
+2.  Dans le panneau explorateur, sélectionnez **XYZ tiles\> OpenStreetMap**.
+
+:::{.callout-warning collapse=true appearance='normal' icon=true}
+## Bug d'affichage du fond de carte OpenStreetMap en salle informatique
+
+En salle informatique, le fond de carte OpenStreetMap peut ne pas s'afficher. Pour régler le problème  procédez à un {{< kbd Ctrl-Alt-Suppr >}} puis sélectionnez **Se déconnecter** et recommencez...
+:::
+
+## Questions 
+
+<span class="numblack">1</span> Créez une nouvelle connexion WMS/WMTS correspondant à l'URL ci-dessous (vous la nommerez Q1). De quelles données géographiques s'agit-il ?
+
+`https://wxs.ign.fr/cartes/geoportail/r/wms?VERSION=1.3.0`
+
+-   Une collection de carte anciennes de l'IGN (Carte de l'état-major, etc.).  
+-   Des photographies aériennes historiques de l'IGN.
+-   Le cadastre.
+
+```{=html}
+<!--
+D'une collection de carte anciennes de l'IGN (Carte de l'état-major (1820-1866), Plan Terrier V1 Corse (XVIIIe siècle), SCAN50 Historique de 1950, etc.) ***
+orthohisto
+https://wxs.ign.fr/orthohisto/geoportail/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetCapabilities
+
+//-->
+```
+
+<span class="numblack">2</span> Créez une nouvelle connexion XYZTiles correspondant à l'URL ci-dessous (vous la nommerez Q2). De quelles données géographiques s'agit-il ?
+
+`https://maps.georeferencer.com/georeferences/fe4ba5eb-afc9-5499-b07f-d101561c63d4/2021-02-09T21:34:45.933315Z/map/{z}/{x}/{y}.png?key=D7AwmpRP1H6pUic6DIK3`
+
+-   Environs de Paris au XVIIIe siècle.
+-   Nantes en 1906.
+-   Le cadastre napoléonien.
+
+```{=html}
+<!--
+- Environs de Paris au XVIIIe siècle.
+//-->
+```
+:::
+
+```{=html}
+<!--
+
+Fichiers pour devoir
+
+Fer, Nicolas de, 1646-1720
+Date:
+1705
+Short Title:
+Environs de Paris.
+https://maps.georeferencer.com/georeferences/fe4ba5eb-afc9-5499-b07f-d101561c63d4/2021-02-09T21:34:45.933315Z/map/{z}/{x}/{y}.png?key=D7AwmpRP1H6pUic6DIK3
+
+Cours de la riviere de Loire depuis la mer jusqu'a Nantes.
+Identifier
+1764
+Bellin, Jacques Nicolas, 1703-1772
+
+https://maps.georeferencer.com/georeferences/ee7a6cbc-b74d-5db0-be80-731de9999c79/2018-09-28T09:47:00.775154Z/map/{z}/{x}/{y}.png?key=D7AwmpRP1H6pUic6DIK3
+
+
+
+Mouvement des Voyageurs Transportes sur les Chemins de Fer en 1889.
+1891
+
+
+Cheysson, Émile
+
+https://maps.georeferencer.com/georeferences/97bf9f02-0607-51b1-bb54-0d423b04ff69/2020-03-21T08:45:36.072824Z/map/{z}/{x}/{y}.png?key=D7AwmpRP1H6pUic6DIK3
+
+//-->
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

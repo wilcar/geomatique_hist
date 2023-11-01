@@ -1,0 +1,15 @@
+## Numérisation de données, testez vos compétences
+
+### Création d'une couche GeoPackage QGIS (CC1)
+
+1.  Lorsque l'on crée une nouvelle couche GeoPackage, l'emplacement du fichier a-t-il importance ?
+
+2.  Vous souhaitez décrire vos données par des champs attributaires. Que convient il de faire pour chaque champs lors de la création du fichier GeoPackage ?
+
+### Numérisation d'entités ponctuelles avec QGIS (CC1)
+
+1.  Quelle est l’icone du bouton du mode d'édition d'une couche ?
+
+2.  Quelle est l’icone du bouton d'ajout d'entités ponctuelles ?
+
+3.  Lorsque l'on ajoute une entité ponctuelle à une couche GeoPackage, a quoi correspond le champs fid qui figure dans les champs à renseigner ?

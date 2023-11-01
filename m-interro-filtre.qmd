@@ -1,0 +1,147 @@
+# Sélection attributaire : filtrer des entités
+
+
+```{=html}
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+```
+
+
+ 
+
+## <iconify-icon icon="ph:seal-question" style="font-size: 25px;"></iconify-icon> Repères
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+## Principe
+
+* Le filtrage ou requête attributaire permet de masquer les entités ne correspondant pas à certains critères attributaires.
+
+
+* Le filtrage s'opère avec des expressions basées sur le langage de bases de données relationnelles SQL .
+
+
+- Le filtre n'est pas définitif et peut-être annulé. 
+
+* La couche filtrée peut être sauvegardée rendant le filtrage définitif. Les entités ne correspondant pas à aux  critères attributaires sont alors supprimées.
+
+:::
+
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+
+### Le constructeur de requête 
+
+Pour accéder au **Constructeur de requête**, sélectionnez la couche souhaitée, effectuez un clic droit **filtrer**.
+
+![Fichier ne 10 lakes (Natural Earth), Filtrage des lacs historiques dans le constructeur de requête.](images/chretiens-orient/filtre_hydro.PNG){fig-align="center" width="400"}
+
+
+
+La boîte de dialogue Constructeur de requête est composée des zones suivantes :
+
+-   Zone **Champs** : contient tous les attributs de la couche.
+
+-   Zone **Valeurs** : liste tout ou partie des valeurs (attributs) du champ sélectionné.
+
+-   Cadre **Opérateurs** : Les opérateurs principaux utilisés dans les requêtes figurent sous forme de boutons à cliquer. Pour ajouter un opérateur à la requête SQL, cliquez sur le bouton correspondant.
+
+-   Zone **expression** : elle permet de saisir l'expression SQL permettant d'effectuer la sélection.
+
+-   Le bouton **Test** affiche une fenêtre comptabilisant le nombre d'entités correspondant à la sélection.\
+    correspondant à la requête.\
+
+-   Le bouton **Effacer** annule la requête.\
+
+-   Le bouton **Ok** valide la requête ou son annulation.\
+
+-   Le bouton **Annuler** ferme la fenêtre, sans effectuer la requête.
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+##### Exemple de requêtes : valeurs numériques
+
+Filtrage de la couche **ne 10 lakes** afin de ne conserver que les lacs naturels. 
+Expression :  `"year"=-99`.
+
+![Filtrage des lacs historiques dans le constructeur de requête.](images/chretiens-orient/filtre_hydro.PNG){fig-align="center" width="400"}
+
+::::
+
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+##### Exemple de requêtes : valeurs textuelles
+
+[Source des données : INRAP](https://www.data.gouv.fr/fr/datasets/localisation-des-sites-de-fouille-archeologiques-de-l-inrap-576210)<i class="fa fa-external-link"aria-hidden="true"></i>
+
+###### Valeurs exactes 
+
+- "Période(s)" = 'Protohistoire'
+
+- "Région" = 'Centre'
+
+
+###### Filtrage plein texte ("contient")
+
+- "Période(s)" LIKE '%#Moyen Âge%'
+
+- "Période(s)" LIKE '%#Moyen Âge%' AND "Période(s)" NOT LIKE '%Contemporain%' 
+
+- "Période(s)" LIKE '%#Néolithique%' OR "Période(s)"  LIKE '%#Protohistoire%'  AND "Période(s)"  ILIKE  '%#Antiquité%' 
+
+
+
+
+:::
+
+
+
+
+
+<!-- CONSEILS -->
+<!-- et -->
+<!-- ASTUCES  -->
+
+
+
+## <iconify-icon icon="streamline:interface-lighting-light-bulb-on-lighting-light-shine-incandescent-bulb-lights" style="font-size: 25px;"></iconify-icon> Conseils et astuces
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+## Résultat de zéro
+
+-  Un résultat de 0 lorsque vous testez une requête peut correspondre à une requête incorrecte.
+- Le SQL utilise des guillemets simples et doubles. Pour ne pas se tromper, le plus simple est d'utiliser les zones **champs** et **valeurs**.
+- Pour modifier un filtre, vous devez d'abord l'**effacer**.
+
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+## Guillemets 
+
+- Les noms des champs sont encadrés par des guillemets doubles `""`.  
+- Les valeurs textuelles sont encadrées par des guillemets simples `''`.
+- Les valeurs numériques ne sont pas encadrés par des guillemets. 
+
+
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+## Annulation 
+
+Le bouton Effacer annule la requête.
+
+:::
+
+
+
+
+
+
+
+
+
+
+https://docs.qgis.org/3.28/fr/docs/user_manual/introduction/general_tools.html?highlight=s%C3%A9lection#selecting-features
+
+
+
+
+

@@ -1,0 +1,414 @@
+::: cartouche
+# Interrogation
+:::
+
+```{=html}
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+```
+
+
+
+::: titrepage
+Interroger l'information géographique
+:::
+
+
+
+
+
+
+
+
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+
+## <iconify-icon icon="solar:pen-new-round-linear" style="font-size: 25px;"></iconify-icon> Activité entités et opérations archéologiques en Pays de la Loire
+
+::: panel-tabset
+
+## Données
+
+Les données sont issues de l'Atlas du patrimoine.
+
+## Fichiers
+
+
+- Téléchargez le fichier zip "archéo-pdl-06-23" depuis Madoc. 
+
+- Windows 10 : **Clic-droit\> Extraire tout** puis **exécutez** le fichier "archéo-pdl.qgz".
+
+-  MacOs : **exécutez** le fichier "archéo-pdl.qgz".
+
+
+:::{.callout-warning collapse=true appearance='default' icon=true}
+## Bug d'affichage du fond de carte OpenStreetMap en salle informatique
+
+En salle informatique, le fond de carte OpenStreetMap peut ne pas s'afficher. Pour régler le problème  procédez à un {{< kbd Ctrl-Alt-Suppr >}} puis sélectionnez **Se déconnecter** et recommencez...
+:::
+
+
+## Questions
+
+Vous répondrez aux questions sur Madoc.
+
+ 
+
+1. De quelle année date l'opération située au 2 Boulevard du Petit Port à Nantes (repère n°1) ?
+
+-   année 2022.
+-   année 2017.
+-   année 2015.
+
+<!-- 2022 -->
+
+
+
+2. Quel type de vestige caractérise l'entité située au nord du camping du Petit Port à Nantes (repère n°2) ?
+
+-   Voie.
+-   Moulin.
+-   Tumulus.
+
+<!-- voie -->
+
+
+3. De quelle année date l'opération située du 7 à 13, rue Saint Jean-Baptiste de la Salle à Nantes (repère n°3) ?
+
+-   année 2022.
+-   année 2017.
+-   année 2015.
+
+<!-- 2017 -->
+
+4. De quelle période peut-être daté le manoir de l'Éperonnière mis à jour lors du chantier de la caserne Mellinet à Nantes (repère n°4) ?
+
+-   Bas Moyen-âge - époque moderne.
+-   Bas Moyen-âge - haut moyen-âge.
+-   Haut moyen-âge - époque moderne.
+
+<!-- -   Bas Moyen-âge - époque moderne. -->
+
+
+
+5. Quels types de vestiges caractérisent les entités situées sur le campus Michelet Sciences (repère n°5) ? Veuillez choisir plusieurs réponses.
+
+-   Voie
+-   Blockaus.
+-   Château non fortifié.
+-   Moulin.
+-   Muraille.
+
+<!-- -   Blockaus. Château non fortifié. -->
+
+
+6. Quels types de vestiges caractérisent les entités situées rue du Président de Gaulle à la Roche/Yon (repère n°6) ? Veuillez choisir plusieurs réponses.
+
+-   Voie.
+-   église.
+-   Cimetière.
+-   Moulin.
+-   Muraille.
+
+
+:::
+:::
+
+
+
+
+
+
+
+
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+
+## <iconify-icon icon="solar:pen-new-round-linear" style="font-size: 25px;"></iconify-icon> Activité sites antiques en Istrie
+
+::: panel-tabset
+
+## Données
+
+Les données sont issues de la base Pleiades. 
+
+## Fichiers
+
+
+- Téléchargez le fichier zip "pleiades-07-23" depuis Madoc. 
+
+- Windows 10 : **Clic-droit\> Extraire tout** puis **exécutez** le fichier "pleiades-06-23.qgz".
+
+-  MacOs : **exécutez** le fichier "pleiades-07-23.qgz".
+
+
+:::{.callout-warning collapse=true appearance='default' icon=true}
+## Bug d'affichage du fond de carte OpenStreetMap en salle informatique
+
+En salle informatique, le fond de carte OpenStreetMap peut ne pas s'afficher. Pour régler le problème  procédez à un {{< kbd Ctrl-Alt-Suppr >}} puis sélectionnez **Se déconnecter** et recommencez...
+:::
+
+
+
+## Questions
+
+Vous répondrez aux questions sur Madoc.
+
+
+1. Quel est le nom de cette cité romaine (repère n°1) ?
+<!-- Pola -->
+
+###### 
+
+2. Pour quel empereur romain ce temple a-t-il été édifié (repère n°2) ? 
+- Auguste.
+- Tibère.
+- Vespasien.
+
+<!-- Auguste -->
+
+
+3. De quel type de site antique s'agit-il (repère n°3) ? <!-- Arche -->
+- Une arche.
+- Un temple.
+- Des thermes. 
+
+
+4. De quel type de site antique s'agit-il (repère n°4) ? <!-- une villa -->
+
+- Un temple.
+- Une villa.
+- Des thermes. 
+
+5. Durant quelle période cet amphithéâtre fut-il construit (repère n°5) ? <!-- augustéenne Neron. -->
+
+- De la période augustéenne et le règne de Neron.
+- Du règne de Tibère à celui de Neron.
+- Du règne de Vespasien à celui de Domitien.
+:::
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Interrogation par sélection d'entités
+
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+
+
+
+##### <iconify-icon icon="gis:select-extent" style="font-size: 30px;"></iconify-icon> Les outils de sélection d'entités
+-   Sélectionnez une entité avec le bouton de sélection ![](images/icones/qgis%20QGIS%20master%20images-themes_default/ico-utiles/mActionSelectRectangle.png){width="30"} de la barre d'outils.
+
+-  Vous pouvez sélectionner plusieurs entités :  
+    - en combinant le bouton de sélection ![](images/icones/qgis%20QGIS%20master%20images-themes_default/ico-utiles/mActionSelectRectangle.png){width="30"} et la touche <kbd>Ctrl</kbd> ;
+    - en utilisant un outil de sélection particulier comme **par rayon**, **à main levée**, **polygonale**, **selon une valeur** ou **une expression**, etc. (boutons de la barre d'outils ![](images/icones/qgis QGIS master images-themes_default/ico-utiles/selection.PNG){width="159"}).
+
+- Pour de-sélectionner des entités, cliquez sur le bouton ![](images/icones/qgis%20QGIS%20master%20images-themes_default/ico-utiles/mActionDeselectAll.png){width="30"}.
+
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+
+##### <iconify-icon icon="mdi:table-eye" style="font-size: 30px;"></iconify-icon> De la sélection aux données attributaires 
+
+Une fois les entités sélectionnées, il vous est possible :  
+
+-  d'afficher le résumé statistique de la sélection (bouton ![](images/icones/qgis%20QGIS%20master%20images-themes_default/ico-utiles/mAlgorithmBasicStatistics.png){width="30"} Pour cela,  sélectionnez la couche, l'attribut et cochez la case **Entité(s) sélectionnée(s) uniquement** ;
+
+
+-  de visualisez les attributs des entités sélectionnées dans la table attributaire de la couche (bouton ![](images/icones/qgis%20QGIS%20master%20images-themes_default/ico-utiles/attributes.png){width="30"}). 
+
+:::{.callout-tip collapse=true appearance='default' icon=true}
+## Remarques sur les entités sélectionnées dans la table d'attributs
+_ Les lignes correspondant aux entités sélectionnées sont surlignées en bleu.       
+-   Pour les isoler, utilisez l'outil **Déplacer la sélection au sommet** (bouton![](images/icones/qgis%20QGIS%20master%20images-themes_default/ico-utiles/mActionSelectedToTop.png){width="30"}).   
+-   Les lignes déplacées au sommet peuvent être triées indépendamment des autres lignes de la table.=false'
+:::
+
+:::
+
+::: doc
+##### <iconify-icon icon="pepicons-pencil:pen-circle" style="font-size: 30px;"></iconify-icon> Activités
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Interrogation de la table attributaire
+
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+### Localiser les entités sélectionnées dans la table attributaire
+:::
+
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+### Rechercher une entité depuis la table attributaire
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Sélection attributaire : filtrer des entités
+
+
+
+::: {.callout-intro .callout-warning collapse="true"}
+
+### <iconify-icon icon="mdi:filter-outline" style="font-size: 30px;" flip="horizontal"></iconify-icon> Principe
+
+* Le filtrage ou requête attributaire permet de masquer les entités ne correspondant pas à certains critères attributaires.
+
+
+* Le filtrage s'opère avec des expressions basées sur le langage de bases de données relationnelles SQL .
+
+
+- Le filtre n'est pas définitif et peut-être annulé. 
+
+* La couche filtrée peut être sauvegardée rendant le filtrage définitif. Les entités ne correspondant pas à aux  critères attributaires sont alors supprimées.
+
+:::
+
+::: {.callout-intro .callout-warning collapse="true"}
+
+### <iconify-icon icon="mdi:filter-cog-outline" style="font-size: 30px;" flip="horizontal"></iconify-icon> Le constructeur de requête 
+
+Pour accéder au **Constructeur de requête**, sélectionnez la couche souhaitée, effectuez un clic droit **filtrer**.
+
+![Fichier ne 10 lakes (Natural Earth), Filtrage des lacs historiques dans le constructeur de requête.](images/chretiens-orient/filtre_hydro.PNG){fig-align="center" width="400"}
+
+
+
+La boîte de dialogue Constructeur de requête est composée des zones suivantes :
+
+-   Zone **Champs** : contient tous les attributs de la couche.
+
+-   Zone **Valeurs** : liste tout ou partie des valeurs (attributs) du champ sélectionné.
+
+-   Cadre **Opérateurs** : Les opérateurs principaux utilisés dans les requêtes figurent sous forme de boutons à cliquer. Pour ajouter un opérateur à la requête SQL, cliquez sur le bouton correspondant.
+
+-   Zone **expression** : elle permet de saisir l'expression SQL permettant d'effectuer la sélection.
+
+-   Le bouton **Test** affiche une fenêtre comptabilisant le nombre d'entités correspondant à la sélection.\
+    correspondant à la requête.\
+
+-   Le bouton **Effacer** annule la requête.\
+
+-   Le bouton **Ok** valide la requête ou son annulation.\
+
+-   Le bouton **Annuler** ferme la fenêtre, sans effectuer la requête.
+
+:::{.callout-tip collapse=false appearance='default' icon=true}
+## Remarques
+-  Un résultat de 0 correspond à une requête incorrecte : aucune entité n'est filtrée.
+- Le SQL utilise des guillemets simples et doubles. Pour ne pas se tromper, le plus simple est d'utiliser les zones **champs** et **valeurs**.
+- Pour modifier un filtre, vous devez d'abord l'**effacer**.
+
+
+
+:::
+
+
+
+
+::: {.callout-intro .callout-warning collapse="true"}
+
+###### <iconify-icon icon="mdi:filter-multiple" style="font-size: 30px;" flip="horizontal"></iconify-icon> Exemples de requêtes
+
+##### valeurs numériques
+
+Filtrage de la couche **ne 10 lakes** afin de ne conserver que les lacs naturels. 
+Expression :  `"year"=-99`.
+
+![Filtrage des lacs historiques dans le constructeur de requête.](images/chretiens-orient/filtre_hydro.PNG){fig-align="center" width="400"}
+
+
+##### valeurs textuelles
+
+[Source des données : INRAP](https://www.data.gouv.fr/fr/datasets/localisation-des-sites-de-fouille-archeologiques-de-l-inrap-576210)<i class="fa fa-external-link"aria-hidden="true"></i>
+
+
+"Période(s)" = '#Protohistoire'
+
+"Région" = 'Centre'
+
+Filtrage plein texte ("contient")
+
+"Période(s)" LIKE '%#Moyen Âge%'
+
+"Période(s)" LIKE '%#Moyen Âge%' AND "Période(s)" NOT LIKE '%Contemporain%' 
+
+"Période(s)" LIKE '%#Néolithique%' OR "Période(s)"  LIKE '%#Protohistoire%'  AND "Période(s)"  ILIKE  '%#Antiquité%' 
+
+
+
+
+:::
+
+:::
+
+https://docs.qgis.org/3.28/fr/docs/user_manual/introduction/general_tools.html?highlight=s%C3%A9lection#selecting-features
+
+
+
+
+

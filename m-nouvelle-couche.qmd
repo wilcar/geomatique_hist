@@ -1,0 +1,66 @@
+# Création d'une nouvelle couche Geopackage
+
+https://tutoqgis.cnrs.fr/exports_pdf/tutoqgis_05_numerisation.pdf
+
+La première étape consiste à créer une couche vierge qui accueillera les données que vous aller numériser.
+
+```{=html}
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+```
+## <iconify-icon icon="ph:seal-question" style="font-size: 25px;"></iconify-icon> Repères
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+## Création d'une nouvelle couche
+
+Il faut se rendre dans le Menu **Couche\> Créer une couche\> Nouvelle couche GeoPackage** et configurer la nouvelle couche.
+:::
+
+::: {.partie .callout-note collapse="true" appearance="minimal"} 
+
+## Configuration d'une nouvelle couche
+
+
+
+###### Base de données (le fichier GeoPackage étant en réalité une base de données)
+
+Spécifiez le nom et l'emplacement de la couche qui sera créée.
+
+::: {.callout-warning collapse="true" appearance="default" icon="true"}
+## Nommage
+
+Il faut trouver le meilleur compromis entre une désignation courte et une désignation explicite permettant de traduire le contenu qui lui est associé.
+:::
+
+
+::: {.callout-note collapse="true" appearance="default" icon="true"}
+## Geopackage multi-couches
+
+Il est possible de créer plusieurs couches dans un seul fichier geopackage afin de simplifier la gestion de fichiers. Pour cela, après avoir crée la couche initiale, créez une nouvelle couche par le menu **Couche\> Créer une couche\> Nouvelle couche GeoPackage**, sélectionnez la base de données précédemment crée et choisisssez
+
+![Création d'un Geopackage multi-couches.](images/methodes/geopackage2.PNG){fig-align="center" width="400"}
+:::
+
+###### Nom de la table (le nom de la couche)
+
+Il peut-être plus détaillé que le nom du fichier.
+
+###### Type de géométrie
+
+Vérifiez que le SCR soit bien le même que celui du projet.
+
+###### Champs de la table attributaire
+
+1.  Nom : le nom du champs
+
+2.  Type : choisissez le type en fonction de vos données.
+
+::: {.callout-tip collapse="true" appearance="default" icon="true"}
+## 
+
+Il sera toujours possible par la suite de supprimer ou d'ajouter de nouvelles colonnes.
+:::
+
+Cliquez sur le bouton **Ajouter à la liste des champs...** ...Et enfin sur **OK**. La couche est automatiquement ajoutée à QGIS
+
+![Fenêtre de configuration d'une nouvelle couche Geopackage.](images/methodes/geopackage.PNG){fig-align="center" width="400"}
+:::

@@ -1,0 +1,52 @@
+
+# L'agrégation géographique
+
+
+```{=html}
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+```
+
+
+
+## <iconify-icon icon="ph:seal-question" style="font-size: 25px;"></iconify-icon> Repères
+
+Selon Aschan-Leygonie et al.(2019), l' agrégation est le processus de regroupement d'entités géographiques à un niveau de détail ou d'observation géographique plus faible que le niveau auquel les données ont été collectées et structurées.
+
+
+::: {.partie .callout-note collapse="true" appearance="minimal"}
+## Compter les points dans des polygones
+
+L'algorithme "compter les points dans les polygones" permet d'ajouter un champ attributaire à une couche de polygones, contenant le nombre total de points d'une autre couche contenus dans chaque polygone.
+
+1.  Rendez-vous dans le **menu Vecteur \> Outils d'analyse \> Compter les points dans les polygones.**
+
+2.  Sélectionnez tout d'abord la **couche de polygones**.
+
+3.  Sélectionnez ensuite la **couche de points**.
+
+4.  Options :
+
+    -   pondération : vous pouvez pondérer le poids de chaque point en vous basant sur un champ attributaire quantitatif,
+
+    -   classification : vous pouvez compter le nombre de catégories différentes à l'intérieur des polygones,
+
+    - la nouvelle colonne ajoutée est appelée NUMPOINTS. Vous pouvez lui attibuer un nom différent.
+
+5.  Exécutez l'algorithme.
+
+6.  Une nouvelle couche "**compte**" est créée.
+
+![Exemple des bretonnes de Chantenay. Les données communales sont agrégées à l'échelle cantonnale. Il ne s'agit pas uniquement de comtper les points, c'est à dire les communes, mais les effectifs. ](images/bretonnes/compter-bretonnes2.PNG){.lightbox fig-align="center" width="400"}
+
+::: {.callout-warning collapse="false" appearance="default" icon="true"}
+## Enregistrement
+
+-   Par défaut, QGIS enregistre le résultat dans une nouvelle couche temporaire appelée compte résultat qui ne sera pas enregistrée la fermeture du projet.
+-   Vous pouvez décider d'enregistrer cette couche "en dur" dans une fichier avant l'exécution de l'algorithme ou ultérieurement.
+:::
+
+:::
+
+
+
+

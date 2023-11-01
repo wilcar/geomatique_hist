@@ -1,0 +1,28 @@
+# Identification d'entités
+
+
+```{=html}
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+```
+
+
+
+
+## <iconify-icon icon="ph:seal-question" style="font-size: 25px;"></iconify-icon> Repères
+
+
+
+L’outil **Identifier** vous permet interagir avec le canevas de la carte et d’afficher des informations sur les entités dans un menu contextuel. 
+
+
+
+- Vous pouvez afficher dans une fenêtre les attributs d'entités avec l'outil d'identification ![](images/icones/qgis%20QGIS%20master%20images-themes_default/ico-utiles/mActionIdentify.png){width="25"}. 
+
+-  Pour quitter le mode d'identification, sélectionnez le bouton "main" de la barre d'outils.
+
+
+
+
+
+
+

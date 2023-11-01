@@ -1,0 +1,54 @@
+## Variable visuelle de taille
+
+```{=html}
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+```
+
+La taille est le procédé qui consiste à faire varier la surface, l'épaisseur, la hauteur ou le volume d'un figuré graphique. C'est la seule variable visuelle qui permette de retranscrire directement des quantités. La variable visuelle taille s'applique généralement à un figuré ponctuel simple. Les symboles les plus couramment utilisés sont le cercle et le carré. Dans le cas de linéaires, c'est l'épaisseur du trait qui variera.
+A partir d’une même donnée statistique, il est possible de produire plusieurs cartes différentes. 
+ La détermination d’une taille optimale permettant un équilibre graphique n'est forcement  une fin en soi. Un cartographe voulant insister sur la faible ampleur globale du phénomène ou au contraire sur son importance pourra choisir d'augmenter ou diminuer la taille de l'ensemble des symboles. 
+^[https://sites-formations.univ-rennes2.fr/mastersigat/Cours/CM_SemiologieGraphique_2020.pdf, https://www.cairn.info/manuel-de-cartographie--9782200612856-page-105.htm].
+
+
+## <iconify-icon icon="ph:seal-question" style="font-size: 25px;"></iconify-icon> Les cerches proportionnels
+
+::: {.partie .callout-note collapse="true " appearance="minimal"}
+
+
+
+##### Carte par cercles proportionnels 
+
+Les cercles proportionnels appartiennent à la catégorie des variables visuelles de proportionnalité. Ils traduisent des valeurs quantitatives continues absolues associées à des localisations ponctuelles.   
+
+Dans les années 1960, James Flannery invente une méthode de calcul non proportionnelle mais perceptuelle visant à compenser la perception biaisée que l'on peut avoir des quantités par des surfaces. C'est cette méthode qui est employée par défaut dans Qgis.
+:::
+
+::: {.partie .callout-note collapse="true " appearance="minimal"}
+##### Réglage et choix de la taille de la taille
+
+
+-   Les réglages s'effectuent par la fenêtre **Symbole unique de la couche (Propriétés \> Symbologie \> Symbole unique**).\
+-   Réglage de la taille : sélectionnez **Assistant** dans les options de **Taille** du figuré. Dans la fenêtre qui s'ouvre choisissez la **Source** puis cliquez sur le bouton "actualiser" qui permet de charger les valeurs min et max. Il vous reste ensuite à définir la taille min et max des cercles.\
+
+:::
+
+::: {.partie .callout-note collapse="true " appearance="minimal"}
+##### Chevauchement des cercles 
+
+-   Le réglage du rendu permet d'afficher les cercles en fonction de l'ordre Descendant des valeurs de la variable statistique à cartographier afin que les grands cercles "ne mangent" pas les plus petits.
+
+Si vous ne constatez aucun résultat, vous devez préalablement enregistrer "en dur" votre couche. vous pouvez également faire les choix du Mode de fusion sur **Multiplier** ou d'utiliser des cercles sans fond.
+
+:::
+
+
+::: {.partie .callout-note collapse="true " appearance="minimal"}
+##### Carte par cercles proportionnels à partir d'entités regroupées en *clusters*
+
+IL est possible de faire varier la taille d'un symbole de *cluster* en fonction du nombre d'entités qu'il agrège. Cette information est donnée par la variable `@cluster_size`.
+
+-   Vous devez reporter la taille du plus grand *cluster* dans le champ **à**.
+-   Attention à bien marquer la distinction de surface de symbole entre entité isolée et *cluster* de deux entités.
+
+:::
+
